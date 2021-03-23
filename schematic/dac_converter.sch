@@ -41,6 +41,15 @@ N 820 -50 820 -0 { lab=Iref}
 N 980 -50 980 -0 { lab=Iref}
 N 1140 -50 1140 0 { lab=Iref}
 N 150 -0 1140 -0 { lab=Iref}
+N 1140 -400 1140 -360 { lab=Iout}
+N 1140 -350 1140 -310 { lab=#net8}
+N 180 -330 180 -310 { lab=#net8}
+N 180 -330 1140 -330 { lab=#net8}
+N 340 -330 340 -310 { lab=#net8}
+N 500 -330 500 -310 { lab=#net8}
+N 660 -330 660 -310 { lab=#net8}
+N 820 -330 820 -310 { lab=#net8}
+N 980 -330 980 -310 { lab=#net8}
 C {madvlsi/nmos3.sym} 180 -280 0 0 {name=M1
 L=0.15
 W=1
@@ -161,7 +170,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 6440 -360 2 0 {name=l5 sig_type=std_logic lab=Vout}
 C {madvlsi/nmos3.sym} 180 -80 0 0 {name=M14
 L=0.15
 W=1
@@ -353,3 +361,4 @@ C {devices/lab_pin.sym} 950 -80 0 0 {name=l9 sig_type=std_logic lab=b5}
 C {devices/lab_pin.sym} 1110 -80 0 0 {name=l10 sig_type=std_logic lab=b6}
 C {devices/lab_pin.sym} 150 0 0 0 {name=l11 sig_type=std_logic lab=Iref}
 C {devices/lab_pin.sym} 1140 -400 1 0 {name=l12 sig_type=std_logic lab=Iout}
+C {madvlsi/ammeter1.sym} 1140 -360 0 0 {name=Viout}
