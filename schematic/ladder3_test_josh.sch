@@ -94,16 +94,13 @@ value=1.8}
 C {madvlsi/vdd.sym} -570 150 0 0 {name=l9 lab=VDD}
 C {madvlsi/gnd.sym} -570 210 0 0 {name=l10 lab=GND}
 C {madvlsi/vsource.sym} -250 210 0 0 {name=Vb0
-value=1.8
-*"pwl 1n 0 2u 1.8 32u 1.8 33u 0 100u 0 "}
+value="pwl 1n 0 2u 1.8 32u 1.8 33u 0 100u 0 "}
 C {madvlsi/gnd.sym} -250 240 0 0 {name=l11 lab=GND}
 C {madvlsi/vsource.sym} -150 210 0 0 {name=Vb1
-value=1.8
-*"pwl 32u 0 33u 1.8 63u 1.8 64u 0 100u 0"}
+value="pwl 32u 0 33u 1.8 63u 1.8 64u 0 100u 0"}
 C {madvlsi/gnd.sym} -150 240 0 0 {name=l12 lab=GND}
 C {madvlsi/vsource.sym} -50 210 0 0 {name=Vb2
-value=1.8
-*"pwl 63u 0 64u 1.8 94u 1.8 95u 0 100u 0"}
+value="pwl 63u 0 64u 1.8 94u 1.8 95u 0 100u 0"}
 C {madvlsi/gnd.sym} -50 240 0 0 {name=l13 lab=GND}
 C {madvlsi/nmos3.sym} -380 -290 0 0 {name=M9
 L=1
