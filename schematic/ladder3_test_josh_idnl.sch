@@ -94,13 +94,16 @@ value=1.8}
 C {madvlsi/vdd.sym} -570 150 0 0 {name=l9 lab=VDD}
 C {madvlsi/gnd.sym} -570 210 0 0 {name=l10 lab=GND}
 C {madvlsi/vsource.sym} -250 210 0 0 {name=Vb0
-value="pwl 1n 0 2u 1.8 32u 1.8 33u 0 100u 0 "}
+value=1.8
+*"pwl 1n 0 2u 1.8 32u 1.8 33u 0 100u 0 "}
 C {madvlsi/gnd.sym} -250 240 0 0 {name=l11 lab=GND}
 C {madvlsi/vsource.sym} -150 210 0 0 {name=Vb1
-value="pwl 32u 0 33u 1.8 63u 1.8 64u 0 100u 0"}
+value=1.8
+*"pwl 32u 0 33u 1.8 63u 1.8 64u 0 100u 0"}
 C {madvlsi/gnd.sym} -150 240 0 0 {name=l12 lab=GND}
 C {madvlsi/vsource.sym} -50 210 0 0 {name=Vb2
-value="pwl 63u 0 64u 1.8 94u 1.8 95u 0 100u 0"}
+value=1.8
+*"pwl 63u 0 64u 1.8 94u 1.8 95u 0 100u 0"}
 C {madvlsi/gnd.sym} -50 240 0 0 {name=l13 lab=GND}
 C {madvlsi/nmos3.sym} -380 -290 0 0 {name=M9
 L=1
@@ -232,25 +235,9 @@ C {madvlsi/tt_models.sym} -600 -40 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
-.param MC_SWITCH=0.0
+.param MC_SWITCH=1.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 70 -190 0 0 {name=SPICE only_toplevel=false value=".control
-tran 0.01u 100u
-run
-plot tran1.i(Vmeas) tran1.i(Vbias) tran1.i(VIb3) tran1.i(VIout)
-plot tran1.i(Vib0) tran1.i(Vib1) tran1.i(Vib2) 
-*plot tran1.v(b0) tran1.v(b1) tran1.v(b2) tran1.v(vbn) tran1.v(vbp) 
-plot tran1.v(Vdr1) tran1.v(Vdr2) tran1.v(Vdr3)
-plot tran1.i(Vib4) tran1.i(Vib5) tran1.i(Vib6)
-*plot tran1.v(s0) tran1.v(s1) tran1.v(s2) 
-*plot tran1.v(Vdr1) tran1.v(Vdr2) tran1.v(Vdr3) tran1.v(Vdr4) tran1.v(Vdr5)
-reset
-*dc Vdd 0 1.8 0.01
-*plot dc.i(Vmeas) dc.i(Vbias) dc.i(VIb3) dc.i(VIout)
-*plot dc.v(Vdr3) dc.v(Vbout)
-.endc
-.save all"}
 C {madvlsi/ammeter1.sym} 0 -330 0 0 {name=Vmeas}
 C {devices/lab_pin.sym} -340 50 1 0 {name=l14 sig_type=std_logic lab=b0}
 C {devices/lab_pin.sym} -230 10 2 0 {name=l15 sig_type=std_logic lab=b1}
@@ -517,3 +504,44 @@ C {devices/lab_pin.sym} -190 -320 2 0 {name=l38 sig_type=std_logic lab=Vdr2}
 C {madvlsi/ammeter1.sym} -380 -260 0 0 {name=VIb4}
 C {madvlsi/ammeter1.sym} -190 -260 0 0 {name=VIb5}
 C {madvlsi/ammeter1.sym} 0 -260 0 0 {name=VIb6}
+C {devices/code.sym} 120 -120 0 0 {name=SPICE only_toplevel=false value=".param Iref=100u
+.control
+  set wr_singlescale
+  let runs = 10
+  let run = 1
+  while run <= runs
+    set appendwrite = FALSE
+    set wr_vecnames
+    let code = 0
+    while code < 8
+      if code eq 0
+        let b0 = 0
+      else
+        let b0 = code % 2
+      end
+      if floor(code / 2) eq 0
+        let b1 = 0
+      else
+        let b1 = floor(code / 2) % 2
+      end
+      if floor(code / 4) eq 0
+        let b2 = 0
+      else
+        let b2 = floor(code / 4) % 2
+      end
+      alter vb0 $&b0
+      alter vb1 $&b1
+      alter vb2 $&b2
+      save all
+      op
+      wrdata ~/Documents/MADVLSI-MP4/schematic/data/ladder3-\{$&run\}.txt v(b0) v(b1) v(b2) i(Vbias) i(Viout) v(Vbout)
+      if code eq 0
+        set appendwrite
+        set wr_vecnames = FALSE
+      end
+      let code = code + 1
+    end
+    reset
+    let run = run + 1
+  end
+.endc"}
