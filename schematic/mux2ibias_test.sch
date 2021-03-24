@@ -9,7 +9,7 @@ N -170 -170 -130 -170 { lab=Vr}
 N 0 -150 20 -150 { lab=Vbn}
 N 0 -190 20 -190 { lab=Vbp}
 N -120 -170 -100 -170 { lab=#net1}
-C {/home/madvlsi/MADVLSI/mini4/schem/mux2.sym} 0 0 0 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 0 0 0 0 {name=X1}
 C {madvlsi/gnd.sym} -220 110 0 0 {name=l1 lab=GND}
 C {madvlsi/vsource.sym} -220 80 0 0 {name=Va
 value=1.8}
@@ -57,7 +57,7 @@ wrdata ~/MADVLSI/mini4/schem/data/mux2ibiason.txt v(Y) v(S) v(A) v(B)
 .save all
 "
 }
-C {/home/madvlsi/MADVLSI/mini4/schem/ibias.sym} -50 -170 0 0 {name=X2}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/ibias.sym} -50 -170 0 0 {name=X2}
 C {madvlsi/resistor.sym} -170 -140 0 0 {name=R1
 value=100k
 m=1}

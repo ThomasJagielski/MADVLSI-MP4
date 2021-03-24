@@ -15,13 +15,13 @@ N -250 -200 -120 -200 { lab=#net1}
 N -190 -260 -190 -200 { lab=#net1}
 N 0 -260 0 -200 { lab=#net2}
 N -380 -260 -380 -200 { lab=#net3}
-N -410 -290 -220 -290 { lab=VDD}
-N -220 -290 -30 -290 { lab=VDD}
+N -410 -290 -220 -290 { lab=Vg}
+N -220 -290 -30 -290 { lab=Vg}
 N -60 -200 0 -200 { lab=#net2}
-N -380 -360 -380 -320 { lab=Vdr1}
-N -190 -360 -190 -320 { lab=Vdr2}
-N -280 -290 -280 -230 { lab=VDD}
-N -90 -290 -90 -230 { lab=VDD}
+N -380 -360 -380 -320 { lab=Vdr3}
+N -190 -360 -190 -320 { lab=Vdr3}
+N -280 -290 -280 -230 { lab=Vg}
+N -90 -290 -90 -230 { lab=Vg}
 N -380 -200 -380 -120 { lab=#net3}
 N -190 -200 -190 -120 { lab=#net1}
 N 0 -200 0 -120 { lab=#net2}
@@ -32,7 +32,7 @@ N -100 -90 -100 50 { lab=b2}
 N -230 -90 -230 50 { lab=b1}
 N -230 50 -200 50 { lab=b1}
 N -410 50 -300 50 { lab=b0}
-N -500 -290 -410 -290 { lab=VDD}
+N -500 -290 -410 -290 { lab=Vg}
 N -60 -390 -30 -390 { lab=Vdr3}
 N -60 -390 -60 -340 { lab=Vdr3}
 N -60 -340 0 -340 { lab=Vdr3}
@@ -40,25 +40,26 @@ N 0 -340 -0 -330 { lab=Vdr3}
 N -0 -360 -0 -340 { lab=Vdr3}
 N -410 -90 -410 -60 { lab=b0}
 N -320 130 -320 170 { lab=Vbn}
-N -370 130 -360 130 { lab=#net4}
 N -220 130 -220 170 { lab=Vbn}
 N -120 130 -120 170 { lab=Vbn}
 N -410 -60 -410 50 { lab=b0}
 N -100 -90 -30 -90 { lab=b2}
 N -230 -90 -220 -90 { lab=b1}
-N -220 -390 -220 -340 { lab=Vdr2}
-N -220 -340 -190 -340 { lab=Vdr2}
-N -410 -390 -410 -340 { lab=Vdr1}
-N -410 -340 -380 -340 { lab=Vdr1}
-N -490 150 -470 150 { lab=#net5}
-C {/home/madvlsi/MADVLSI/mini4/schem/mux2.sym} -300 90 3 0 {name=X2}
-C {/home/madvlsi/MADVLSI/mini4/schem/mux2.sym} -200 90 3 0 {name=X3}
-C {/home/madvlsi/MADVLSI/mini4/schem/mux2.sym} -100 90 3 0 {name=X4}
+N -490 150 -470 150 { lab=#net4}
+N -410 -390 -60 -390 { lab=Vdr3}
+N -240 -390 -240 -340 { lab=Vdr3}
+N -240 -340 -190 -340 { lab=Vdr3}
+N -430 -390 -410 -390 { lab=Vdr3}
+N -430 -390 -430 -350 { lab=Vdr3}
+N -430 -350 -380 -350 { lab=Vdr3}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} -300 90 3 0 {name=X2}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} -200 90 3 0 {name=X3}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} -100 90 3 0 {name=X4}
 C {madvlsi/gnd.sym} -280 130 0 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} -180 130 0 0 {name=l2 lab=GND}
 C {madvlsi/gnd.sym} -80 130 0 0 {name=l3 lab=GND}
 C {madvlsi/resistor.sym} -500 180 0 0 {name=R1
-value=200k
+value=200
 m=1}
 C {madvlsi/gnd.sym} -500 210 0 0 {name=l8 lab=GND}
 C {madvlsi/vsource.sym} -570 180 0 0 {name=Vdd
@@ -70,11 +71,11 @@ value=1.8
 *"pwl 1n 0 2n 1.8 32n 1.8 33n 0 100n 0 "}
 C {madvlsi/gnd.sym} -250 240 0 0 {name=l11 lab=GND}
 C {madvlsi/vsource.sym} -150 210 0 0 {name=Vdd2
-value=0
+value=1.8
 *"pwl 32n 0 33n 1.8 63n 1.8 64n 0 100n 0"}
 C {madvlsi/gnd.sym} -150 240 0 0 {name=l12 lab=GND}
 C {madvlsi/vsource.sym} -50 210 0 0 {name=Vdd3
-value=0
+value=1.8
 *"pwl 63n 0 64n 1.8 94n 1.8 95n 0 100n 0"}
 C {madvlsi/gnd.sym} -50 240 0 0 {name=l13 lab=GND}
 C {madvlsi/nmos3.sym} -380 -290 0 0 {name=M9
@@ -200,7 +201,6 @@ spiceprefix=X
 C {madvlsi/gnd.sym} -380 -60 0 0 {name=l18 lab=GND}
 C {madvlsi/gnd.sym} -190 -60 0 0 {name=l19 lab=GND}
 C {madvlsi/gnd.sym} 0 -60 0 0 {name=l20 lab=GND}
-C {madvlsi/vdd.sym} -500 -290 0 0 {name=l4 lab=VDD}
 C {madvlsi/pmos3.sym} 0 -390 0 0 {name=M1
 L=0.6
 W=3
@@ -270,15 +270,15 @@ C {devices/lab_pin.sym} -340 50 1 0 {name=l14 sig_type=std_logic lab=b0}
 C {devices/lab_pin.sym} -230 10 2 0 {name=l15 sig_type=std_logic lab=b1}
 C {devices/lab_pin.sym} -100 10 2 0 {name=l16 sig_type=std_logic lab=b2}
 C {devices/lab_pin.sym} -320 170 3 0 {name=l17 sig_type=std_logic lab=Vbn}
-C {/home/madvlsi/MADVLSI/mini4/schem/ibias.sym} -420 150 0 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/ibias.sym} -420 150 0 0 {name=X1}
 C {devices/lab_pin.sym} -250 90 1 0 {name=l21 sig_type=std_logic lab=s0}
 C {devices/lab_pin.sym} -150 90 1 0 {name=l22 sig_type=std_logic lab=s1}
 C {devices/lab_pin.sym} -50 90 1 0 {name=l23 sig_type=std_logic lab=s2}
-C {madvlsi/resistor.sym} -360 160 0 0 {name=R2
-value=10k
-m=1}
-C {madvlsi/gnd.sym} -360 190 0 0 {name=l24 lab=GND}
-C {devices/lab_pin.sym} -380 -340 2 0 {name=l25 sig_type=std_logic lab=Vdr1}
-C {devices/lab_pin.sym} -190 -340 2 0 {name=l26 sig_type=std_logic lab=Vdr2}
 C {devices/lab_pin.sym} 0 -340 2 0 {name=l27 sig_type=std_logic lab=Vdr3}
 C {madvlsi/ammeter1.sym} -490 150 1 1 {name=Vmeas1}
+C {madvlsi/vsource.sym} -670 180 0 0 {name=Vg
+value=1.2
+}
+C {madvlsi/gnd.sym} -670 210 0 0 {name=l26 lab=GND}
+C {devices/lab_pin.sym} -670 150 1 0 {name=l4 sig_type=std_logic lab=Vg}
+C {devices/lab_pin.sym} -500 -290 0 0 {name=l25 sig_type=std_logic lab=Vg}

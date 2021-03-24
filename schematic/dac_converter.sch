@@ -275,7 +275,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 6440 -360 2 0 {name=l1 sig_type=std_logic lab=Vout}
 C {madvlsi/nmos3.sym} 430 -190 1 0 {name=M9
 L=0.15
 W=1

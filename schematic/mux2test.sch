@@ -5,7 +5,7 @@ V {}
 S {}
 E {}
 N 40 -0 60 -0 { lab=Y}
-C {/home/madvlsi/MADVLSI/mini4/schem/mux2.sym} 0 0 0 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 0 0 0 0 {name=X1}
 C {madvlsi/gnd.sym} -220 110 0 0 {name=l1 lab=GND}
 C {madvlsi/vsource.sym} -220 80 0 0 {name=Va
 value=1.8}
