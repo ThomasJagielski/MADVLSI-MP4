@@ -96,17 +96,25 @@ N 680 -290 680 -230 { lab=Vg}
 N 710 -200 770 -200 { lab=#net10}
 N -30 -360 -30 -330 { lab=#net11}
 N -30 -330 -0 -330 { lab=#net11}
-N 740 -330 770 -330 { lab=#net12}
-N 740 -360 740 -330 { lab=#net12}
-N 570 -330 570 -320 { lab=#net13}
-N 380 -330 380 -320 { lab=#net14}
-N 190 -330 190 -320 { lab=#net15}
-N 160 -360 160 -330 { lab=#net15}
-N 160 -330 190 -330 { lab=#net15}
-N 350 -360 350 -330 { lab=#net14}
-N 350 -330 380 -330 { lab=#net14}
-N 540 -360 540 -330 { lab=#net13}
-N 540 -330 570 -330 { lab=#net13}
+N 570 -330 570 -320 { lab=#net12}
+N 380 -330 380 -320 { lab=#net13}
+N 190 -330 190 -320 { lab=#net14}
+N 160 -360 160 -330 { lab=#net14}
+N 160 -330 190 -330 { lab=#net14}
+N 350 -360 350 -330 { lab=#net13}
+N 350 -330 380 -330 { lab=#net13}
+N 540 -360 540 -330 { lab=#net12}
+N 540 -330 570 -330 { lab=#net12}
+N 1120 -130 1160 -130 { lab=Vbn}
+N 990 -160 1080 -160 { lab=#net15}
+N 1020 -130 1120 -130 { lab=Vbn}
+N 1190 -280 1190 -160 { lab=#net16}
+N 770 -360 770 -330 { lab=#net17}
+N 770 -360 1190 -360 { lab=#net17}
+N 990 -320 990 -160 { lab=#net15}
+N 990 -320 1190 -320 { lab=#net15}
+N 1310 -320 1350 -320 { lab=Vout}
+N 1140 -160 1140 -130 { lab=Vbn}
 C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} -420 90 3 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} -230 90 3 0 {name=X3}
 C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} -40 90 3 0 {name=X4}
@@ -663,21 +671,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/pmos3.sym} 770 -360 0 0 {name=M31
-L=1
-W=3
-body=VDD
-nf=1
-mult=2
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {devices/lab_pin.sym} 530 -90 0 0 {name=l15 sig_type=std_logic lab=b5}
 C {devices/lab_pin.sym} 150 -90 0 0 {name=l17 sig_type=std_logic lab=b3}
 C {devices/lab_pin.sym} 340 -90 0 0 {name=l37 sig_type=std_logic lab=b4}
@@ -704,4 +697,54 @@ C {madvlsi/gnd.sym} 770 -60 0 0 {name=l52 lab=GND}
 C {madvlsi/vdd.sym} 570 -390 0 0 {name=l14 lab=VDD}
 C {madvlsi/vdd.sym} 380 -390 0 0 {name=l38 lab=VDD}
 C {madvlsi/vdd.sym} 190 -390 0 0 {name=l39 lab=VDD}
-C {madvlsi/vdd.sym} 770 -390 0 0 {name=l53 lab=VDD}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/low-voltage_super-wilson.sym} 1170 -260 0 0 {name=X9}
+C {madvlsi/nmos3.sym} 990 -130 2 0 {name=M33
+L=10
+W=3
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} 1080 -130 2 0 {name=M34
+L=10
+W=3
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/gnd.sym} 1080 -100 0 0 {name=l60 lab=GND}
+C {madvlsi/nmos3.sym} 1190 -130 0 0 {name=M38
+L=10
+W=3
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/gnd.sym} 1190 -100 0 0 {name=l61 lab=GND}
+C {madvlsi/gnd.sym} 990 -100 0 0 {name=l62 lab=GND}
+C {devices/lab_pin.sym} 1350 -320 2 0 {name=l53 sig_type=std_logic lab=Vout}
+C {devices/lab_pin.sym} 1140 -160 1 0 {name=l54 sig_type=std_logic lab=Vbn}
