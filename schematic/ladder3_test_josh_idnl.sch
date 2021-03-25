@@ -517,24 +517,24 @@ C {devices/code.sym} 120 -120 0 0 {name=SPICE only_toplevel=false value=".param 
       if code eq 0
         let b0 = 0
       else
-        let b0 = code % 2
+        let b0 = (code % 2) * 1.8
       end
       if floor(code / 2) eq 0
         let b1 = 0
       else
-        let b1 = floor(code / 2) % 2
+        let b1 = (floor(code / 2) % 2) * 1.8
       end
       if floor(code / 4) eq 0
         let b2 = 0
       else
-        let b2 = floor(code / 4) % 2
+        let b2 = (floor(code / 4) % 2) * 1.8
       end
       alter vb0 $&b0
       alter vb1 $&b1
       alter vb2 $&b2
       save all
       op
-      wrdata ~/Documents/MADVLSI-MP4/schematic/data/ladder3-\{$&run\}.txt v(b0) v(b1) v(b2) i(Vbias) i(Viout) v(Vbout)
+      wrdata ~/Documents/MADVLSI-MP4/schematic/data/ladder3_l3w6-\{$&run\}.txt v(b0) v(b1) v(b2) i(vbias) i(viout) v(vbout)
       if code eq 0
         set appendwrite
         set wr_vecnames = FALSE
