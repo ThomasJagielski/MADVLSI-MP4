@@ -1,0 +1,29 @@
+Equate elements:  no current cell.
+Class low-voltage_super-wilson_LDS.spice:  Merged 5 devices.
+
+Subcircuit summary:
+Circuit 1: low-voltage_super-wilson.spice  |Circuit 2: low-voltage_super-wilson_LDS.sp 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (5)                |sky130_fd_pr__pfet_01v8 (5)                
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+sky130_fd_pr__pfet_01v8M4 vs. sky130_fd_pr__pfet_01v8M1a:
+ W circuit1: 3   circuit2: 6   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M3 vs. sky130_fd_pr__pfet_01v8M2a:
+ W circuit1: 3   circuit2: 6   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M1 vs. sky130_fd_pr__pfet_01v8M3a:
+ W circuit1: 3   circuit2: 6   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v8M4a:
+ W circuit1: 3   circuit2: 6   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M5 vs. sky130_fd_pr__pfet_01v8M5a:
+ W circuit1: 3   circuit2: 6   (delta=66.7%, cutoff=1%)
+Cells have no pins;  pin matching not needed.
+Device classes low-voltage_super-wilson.spice and low-voltage_super-wilson_LDS.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: low-voltage_super-wilson.spice

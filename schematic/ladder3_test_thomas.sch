@@ -93,7 +93,7 @@ C {madvlsi/gnd.sym} -280 130 0 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} -180 130 0 0 {name=l2 lab=GND}
 C {madvlsi/gnd.sym} -80 130 0 0 {name=l3 lab=GND}
 C {madvlsi/resistor.sym} -500 180 0 0 {name=R1
-value=50k
+value=600k
 m=1}
 C {madvlsi/gnd.sym} -500 210 0 0 {name=l8 lab=GND}
 C {madvlsi/vsource.sym} -570 180 0 0 {name=Vdd
