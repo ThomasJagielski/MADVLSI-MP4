@@ -132,7 +132,7 @@ N 600 -420 600 -230 { lab=#net18}
 N 600 -250 2360 -250 {}
 C {madvlsi/pmos3.sym} 1330 -570 3 0 {name=M1
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -147,7 +147,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1430 -570 3 0 {name=M2
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -208,7 +208,7 @@ spiceprefix=X
 C {madvlsi/vdd.sym} 510 -680 0 0 {name=l1 lab=VDD}
 C {madvlsi/pmos3.sym} 1330 -570 3 0 {name=M11
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -256,7 +256,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1230 -570 3 0 {name=M12
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -271,7 +271,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1130 -570 3 0 {name=M13
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -286,7 +286,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1030 -570 3 0 {name=M16
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -301,7 +301,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 930 -570 3 0 {name=M17
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -376,7 +376,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 830 -570 3 0 {name=M22
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -391,7 +391,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 730 -570 3 0 {name=M23
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -406,7 +406,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 630 -570 3 0 {name=M24
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -421,7 +421,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2230 -570 3 0 {name=M3
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -436,7 +436,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2330 -570 3 0 {name=M4
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -526,7 +526,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2130 -570 3 0 {name=M27
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -541,7 +541,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2030 -570 3 0 {name=M28
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -556,7 +556,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1930 -570 3 0 {name=M29
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -571,7 +571,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1830 -570 3 0 {name=M30
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -646,7 +646,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1730 -570 3 0 {name=M35
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -661,7 +661,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1630 -570 3 0 {name=M36
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
@@ -676,7 +676,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1530 -570 3 0 {name=M37
 L=1
-W=3
+W=1.5
 body=VDD
 nf=1
 mult=1
