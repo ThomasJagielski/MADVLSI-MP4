@@ -429,11 +429,11 @@ C {devices/lab_pin.sym} 0 -320 2 0 {name=l38 sig_type=std_logic lab=Vdr2}
 C {madvlsi/ammeter1.sym} -380 -260 0 0 {name=VIb4}
 C {madvlsi/ammeter1.sym} -190 -260 0 0 {name=VIb5}
 C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param Wt = 1
-.param Lt = 0.15
+.param Lt = 0.25
 .control
 *** change W and L for the next two lines as well !***
   let myW = 1
-  let myL = 0.15
+  let myL = 0.25
   set wr_singlescale
   let runs = 10
   let run = 1
