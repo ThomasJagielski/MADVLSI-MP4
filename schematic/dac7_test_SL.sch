@@ -428,12 +428,12 @@ C {devices/lab_pin.sym} -240 -320 0 0 {name=l37 sig_type=std_logic lab=Vdr1}
 C {devices/lab_pin.sym} 0 -320 2 0 {name=l38 sig_type=std_logic lab=Vdr2}
 C {madvlsi/ammeter1.sym} -380 -260 0 0 {name=VIb4}
 C {madvlsi/ammeter1.sym} -190 -260 0 0 {name=VIb5}
-C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param Wt = 9
-.param Lt = 3
+C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param Wt = 6
+.param Lt = 0.5
 .control
 *** change W and L for the next two lines as well !***
-  let myW = 9
-  let myL = 3
+  let myW = 6
+  let myL = 0.5
   set wr_singlescale
   let runs = 10
   let run = 1
@@ -441,7 +441,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
     set appendwrite = FALSE
     set wr_vecnames
     let code = 0
-    while code < 128
+    while code < 32
       if code eq 0
         let b0 = 0
       else
@@ -484,7 +484,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
       alter vb4 $&b4
       alter vb5 $&b5
       alter vb6 $&b6
-      save all
+      save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
       op
       wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}op-\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
       if code eq 0
@@ -508,7 +508,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
   alter vb4 1.8
   alter vb5 1.8
   alter vb6 1.8
-  save all
+  save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
   dc Voutt 0 1.8 0.01
   run
   wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vout-1.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
@@ -523,7 +523,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
   alter vb4 1.8
   alter vb5 1.8
   alter vb6 0
-  save all
+  save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
   dc Voutt 0 1.8 0.01
   run
   wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vout-2.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
@@ -538,7 +538,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
   alter vb4 1.8
   alter vb5 1.8
   alter vb6 1.8
-  save all
+  save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
   dc Voutt 0 1.8 0.01
   run
   wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vdd-1.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
@@ -553,7 +553,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
   alter vb4 1.8
   alter vb5 1.8
   alter vb6 0
-  save all
+  save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
   dc Voutt 0 1.8 0.01
   run
   wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vdd-2.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
