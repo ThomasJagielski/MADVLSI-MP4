@@ -1,0 +1,17 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class dac_7_bit_LDS.spice:  Merged 14 devices.
+
+Subcircuit summary:
+Circuit 1: dac_7_bit_LDS.spice             |Circuit 2: dac_7_bit.spice                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (6)                |sky130_fd_pr__pfet_01v8 (6)                
+sky130_fd_pr__nfet_01v8 (20)               |sky130_fd_pr__nfet_01v8 (20)               
+Number of devices: 26                      |Number of devices: 26                      
+Number of nets: 24                         |Number of nets: 24                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes dac_7_bit_LDS.spice and dac_7_bit.spice are equivalent.
+Circuits match uniquely.
