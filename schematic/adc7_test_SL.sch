@@ -510,7 +510,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
   save all
   dc Voutt 0 1.8 0.01
   run
-  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vout-1.txt i(viout) v(vout)
+  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vout-1.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
 
   reset
   set wr_singlescale
@@ -525,7 +525,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
   save all
   dc Voutt 0 1.8 0.01
   run
-  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vout-2.txt i(viout) v(vout)
+  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vout-2.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
 
   reset
   set wr_singlescale
@@ -540,7 +540,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
   save all
   dc Voutt 0 1.8 0.01
   run
-  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vdd-1.txt i(viout) v(vout)
+  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vdd-1.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
 
   reset
   set wr_singlescale
@@ -555,7 +555,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
   save all
   dc Voutt 0 1.8 0.01
   run
-  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vdd-2.txt i(viout) v(vout)
+  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vdd-2.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
 .endc"}
 C {madvlsi/gnd.sym} 1090 -120 0 0 {name=l40 lab=GND}
 C {madvlsi/nmos3.sym} 1160 40 1 0 {name=M24
