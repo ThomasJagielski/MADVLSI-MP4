@@ -460,22 +460,22 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
       if floor(code / 8) eq 0
         let b3 = 0
       else
-        let b3 = floor(code / 8) % 2
+        let b3 = floor(code / 8) % 2 * 1.8
       end
       if floor(code / 16) eq 0
         let b4 = 0
       else 
-        let b4 = floor(code / 16) % 2
+        let b4 = floor(code / 16) % 2 * 1.8
       end
       if floor(code / 32) eq 0
         let b5 = 0
       else
-        let b5 = floor(code / 32) % 2
+        let b5 = floor(code / 32) % 2 * 1.8
       end
       if floor(code / 64) eq 0
         let b6 = 0
       else
-        let b6 = floor(code / 64) % 2
+        let b6 = floor(code / 64) % 2 * 1.8
       end
       alter vb0 $&b0
       alter vb1 $&b1
@@ -497,6 +497,7 @@ C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param
     let run = run + 1
   end
 
+  set appendwrite = FALSE
   reset
   set wr_singlescale
   set wr_vecnames
