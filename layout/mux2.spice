@@ -1,0 +1,17 @@
+* SPICE3 file created from mux2.ext - technology: sky130A
+
+.subckt inverter A Y VP VN
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=5e+06u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+.ends
+
+
+* Top level circuit mux2
+
+Xinverter_0 S inverter_0/Y VP VN inverter
+X0 muxout inverter_0/Y A VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 B S muxout VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X2 muxout S A VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X3 B inverter_0/Y muxout VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+.end
+
