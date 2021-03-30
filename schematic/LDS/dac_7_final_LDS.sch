@@ -4467,3 +4467,11 @@ value=1}
 C {madvlsi/gnd.sym} 2740 -1610 1 0 {name=l43 lab=GND}
 C {devices/lab_pin.sym} 2350 -1710 2 0 {name=l51 sig_type=std_logic lab=Vg}
 C {devices/lab_pin.sym} 630 -1280 0 0 {name=l54 sig_type=std_logic lab=Vg}
+C {madvlsi/tt_models.sym} 5220 -1260 0 0 {
+name=TT_MODELS
+only_toplevel=false
+value=".option wnflag=1
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
+}
+C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value="
+"}
