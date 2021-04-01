@@ -17,7 +17,7 @@ N 2720 -1080 2760 -1080 { lab=VDD}
 N 2820 -1080 2860 -1080 { lab=#net6}
 N 2920 -1080 2960 -1080 { lab=VDD}
 N 3020 -1080 3060 -1080 { lab=#net7}
-N 3120 -1080 3160 -1080 { lab=GND}
+N 3120 -1080 3160 -1080 { lab=#net8}
 N 1820 -850 1860 -850 { lab=#net1}
 N 1920 -850 1960 -850 { lab=#net2}
 N 2020 -850 2060 -850 { lab=#net3}
@@ -42,13 +42,13 @@ N 2720 -640 2760 -640 { lab=#net6}
 N 2820 -640 2860 -640 { lab=GND}
 N 1620 -540 3480 -540 { lab=GND}
 N 1940 -640 1940 -540 { lab=GND}
-N 1990 -610 1990 -500 { lab=Vbn}
-N 2190 -610 2190 -510 { lab=GND}
-N 2290 -610 2290 -510 { lab=GND}
-N 2490 -610 2490 -510 { lab=GND}
-N 2590 -610 2590 -510 { lab=GND}
-N 2790 -610 2790 -510 { lab=GND}
-N 2890 -610 2890 -510 { lab=GND}
+N 1990 -610 1990 -500 { lab=b0}
+N 2190 -610 2190 -510 { lab=b1}
+N 2290 -610 2290 -510 { lab=b2}
+N 2490 -610 2490 -510 { lab=b3}
+N 2590 -610 2590 -510 { lab=b4}
+N 2790 -610 2790 -510 { lab=b5}
+N 2890 -610 2890 -510 { lab=b6}
 N 1580 -1140 3440 -1140 { lab=Vg}
 N 2090 -610 2090 -540 { lab=GND}
 N 2390 -610 2390 -540 { lab=GND}
@@ -118,8 +118,8 @@ N 1940 -780 1940 -730 { lab=#net2}
 N 1940 -730 2140 -730 { lab=#net2}
 N 2140 -730 2140 -640 { lab=#net2}
 N 2240 -1240 2240 -1080 { lab=VDD}
-N 3140 -1160 3140 -1080 { lab=GND}
-N 3140 -1160 3440 -1160 { lab=GND}
+N 3140 -1160 3140 -1080 { lab=#net8}
+N 3140 -1160 3440 -1160 { lab=#net8}
 N 2340 -1080 2340 -950 { lab=#net3}
 N 2040 -950 2340 -950 { lab=#net3}
 N 2040 -950 2040 -850 { lab=#net3}
@@ -209,34 +209,54 @@ N 1520 -1260 1520 -1240 { lab=VDD}
 N 1540 -540 1540 -500 { lab=GND}
 N 2940 -1240 2940 -1080 { lab=VDD}
 N 2740 -1240 2740 -1080 { lab=VDD}
-N 2890 -510 3010 -510 { lab=GND}
-N 3010 -510 3010 -420 { lab=GND}
-N 2790 -510 2820 -510 { lab=GND}
-N 2820 -510 2820 -420 { lab=GND}
-N 2590 -510 2630 -510 { lab=GND}
-N 2630 -510 2630 -420 { lab=GND}
-N 2440 -510 2440 -420 { lab=GND}
-N 2440 -510 2490 -510 { lab=GND}
-N 2250 -510 2250 -420 { lab=GND}
-N 2250 -510 2290 -510 { lab=GND}
-N 2040 -510 2040 -420 { lab=GND}
-N 2040 -510 2190 -510 { lab=GND}
-N 1830 -500 1830 -420 { lab=Vbn}
-N 1830 -500 1990 -500 { lab=Vbn}
+N 2890 -510 3010 -510 { lab=b6}
+N 3010 -510 3010 -420 { lab=b6}
+N 2820 -510 2820 -420 { lab=b5}
+N 2630 -510 2630 -420 { lab=b4}
+N 2440 -510 2440 -420 { lab=b3}
+N 2250 -510 2250 -420 { lab=b2}
+N 2040 -510 2040 -420 { lab=b1}
+N 1830 -500 1830 -420 { lab=b0}
+N 1830 -500 1990 -500 { lab=b0}
 N 1480 -1140 1520 -1140 { lab=Vg}
-N 3450 -1160 3470 -1160 { lab=GND}
-N 3480 -1240 3540 -1240 { lab=VDD}
-N 3540 -1240 3540 -1190 { lab=VDD}
-N 3540 -1130 3540 -1100 { lab=GND}
-N 3510 -1160 3510 -1130 { lab=GND}
-N 3510 -1130 3540 -1130 { lab=GND}
-N 3470 -1160 3510 -1160 { lab=GND}
-N 3510 -1160 3660 -1160 { lab=GND}
-N 3690 -1130 3690 -1100 { lab=GND}
-N 3540 -1240 3690 -1240 { lab=VDD}
-N 3690 -1240 3690 -1210 { lab=VDD}
-N 3690 -1200 3690 -1190 { lab=#net8}
-N 3440 -1160 3450 -1160 { lab=GND}
+N 3450 -1160 3470 -1160 { lab=#net8}
+N 3440 -1160 3450 -1160 { lab=#net8}
+N 2080 -380 2090 -380 { lab=s1}
+N 2090 -380 2090 -290 { lab=s1}
+N 1870 -380 1880 -380 { lab=s0}
+N 1880 -380 1880 -290 { lab=s0}
+N 1920 -300 2020 -300 { lab=Vbn}
+N 2020 -300 2120 -300 { lab=Vbn}
+N 1810 -340 1810 -300 { lab=Vbn}
+N 2020 -340 2020 -300 { lab=Vbn}
+N 2290 -380 2300 -380 { lab=s2}
+N 2300 -380 2300 -290 { lab=s2}
+N 2230 -300 2420 -300 { lab=Vbn}
+N 2230 -340 2230 -300 { lab=Vbn}
+N 2480 -380 2490 -380 { lab=s3}
+N 2490 -380 2490 -290 { lab=s3}
+N 2420 -300 2610 -300 { lab=Vbn}
+N 2420 -340 2420 -300 { lab=Vbn}
+N 2670 -380 2680 -380 { lab=s4}
+N 2680 -380 2680 -290 { lab=s4}
+N 2610 -300 2800 -300 { lab=Vbn}
+N 2610 -340 2610 -300 { lab=Vbn}
+N 2860 -380 2870 -380 { lab=s5}
+N 2870 -380 2870 -290 { lab=s5}
+N 2800 -300 2990 -300 { lab=Vbn}
+N 2800 -340 2800 -300 { lab=Vbn}
+N 2120 -300 2230 -300 { lab=Vbn}
+N 2990 -340 2990 -300 { lab=Vbn}
+N 3050 -380 3060 -380 { lab=s6}
+N 3060 -380 3060 -290 { lab=s6}
+N 1810 -300 1920 -300 { lab=Vbn}
+N 2790 -510 2820 -510 { lab=b5}
+N 2590 -510 2630 -510 { lab=b4}
+N 2440 -510 2490 -510 { lab=b3}
+N 2250 -510 2290 -510 { lab=b2}
+N 2040 -510 2190 -510 { lab=b1}
+N 3470 -1160 3750 -1160 { lab=#net8}
+N 3760 -1160 3800 -1160 { lab=VDD}
 C {madvlsi/nmos3.sym} 1790 -1080 1 0 {name=M3a
 L=4
 W=16
@@ -1095,68 +1115,75 @@ spiceprefix=X
 C {devices/lab_pin.sym} 3440 -1140 2 0 {name=l15 sig_type=std_logic lab=Vg}
 C {madvlsi/vdd.sym} 1520 -1260 0 0 {name=l13 lab=VDD}
 C {madvlsi/gnd.sym} 1540 -500 0 0 {name=l16 lab=GND}
-C {madvlsi/gnd.sym} 1830 -290 0 0 {name=l2 lab=GND}
-C {devices/lab_pin.sym} 1830 -350 0 0 {name=l3 sig_type=std_logic lab=Vbn}
+C {madvlsi/gnd.sym} 1610 -180 0 0 {name=l2 lab=GND}
+C {devices/lab_pin.sym} 1610 -240 0 0 {name=l3 sig_type=std_logic lab=Vbn}
 C {madvlsi/vsource.sym} 1450 -1140 1 0 {name=Vg
 value=1.2}
 C {madvlsi/gnd.sym} 1420 -1140 1 0 {name=l4 lab=GND}
-C {madvlsi/tt_models.sym} 3530 -970 0 0 {
+C {madvlsi/tt_models.sym} 1220 -610 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 3560 -780 0 0 {name=SPICE only_toplevel=false value=".tran 1u 100u 0.000001u
-.save all
-"}
-C {madvlsi/pmos3.sym} 3690 -1160 0 0 {name=M3
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/gnd.sym} 3540 -1100 0 0 {name=l5 lab=GND}
-C {madvlsi/pmos3.sym} 3540 -1160 0 0 {name=M15
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/gnd.sym} 3690 -1100 0 0 {name=l12 lab=GND}
-C {madvlsi/ammeter1.sym} 3690 -1210 0 0 {name=Viout1}
-C {madvlsi/vsource.sym} 1230 -530 0 0 {name=Vdd
+C {devices/code_shown.sym} 1250 -420 0 0 {name=SPICE only_toplevel=false value=".tran 0.000001 10u 0.0001u
+save all"}
+C {madvlsi/vsource.sym} 1610 -370 0 0 {name=Vdd
 value=1.8}
-C {madvlsi/gnd.sym} 1230 -500 0 0 {name=l17 lab=GND}
-C {madvlsi/vdd.sym} 1230 -560 0 0 {name=l18 lab=VDD}
-C {madvlsi/isource.sym} 1830 -320 0 0 {name=I1
+C {madvlsi/gnd.sym} 1610 -340 0 0 {name=l17 lab=GND}
+C {madvlsi/vdd.sym} 1610 -400 0 0 {name=l18 lab=VDD}
+C {madvlsi/isource.sym} 1610 -210 0 0 {name=I1
 value=0.1u}
-C {devices/lab_pin.sym} 1830 -420 3 0 {name=l19 sig_type=std_logic lab=Vbn}
-C {madvlsi/gnd.sym} 2040 -420 0 0 {name=l1 lab=GND}
-C {madvlsi/gnd.sym} 2250 -420 0 0 {name=l6 lab=GND}
-C {madvlsi/gnd.sym} 2440 -420 0 0 {name=l7 lab=GND}
-C {madvlsi/gnd.sym} 2630 -420 0 0 {name=l8 lab=GND}
-C {madvlsi/gnd.sym} 2820 -420 0 0 {name=l9 lab=GND}
-C {madvlsi/gnd.sym} 3010 -420 0 0 {name=l10 lab=GND}
-C {madvlsi/vsource.sym} 1340 -230 0 0 {name=Vv
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 1830 -380 3 0 {name=X2}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 2040 -380 3 0 {name=X3}
+C {madvlsi/gnd.sym} 1850 -340 0 0 {name=l39 lab=GND}
+C {madvlsi/gnd.sym} 2060 -340 0 0 {name=l40 lab=GND}
+C {madvlsi/vsource.sym} 1880 -260 0 0 {name=Vb0
 value=1.8}
-C {madvlsi/gnd.sym} 1340 -200 0 0 {name=l11 lab=GND}
-C {devices/lab_pin.sym} 1340 -260 1 0 {name=l14 sig_type=std_logic lab=Vv}
+C {madvlsi/gnd.sym} 1880 -230 0 0 {name=l41 lab=GND}
+C {madvlsi/vsource.sym} 2090 -260 0 0 {name=Vb1
+value=1.8}
+C {madvlsi/gnd.sym} 2090 -230 0 0 {name=l42 lab=GND}
+C {madvlsi/vsource.sym} 2300 -260 0 0 {name=Vb2
+value=1.8}
+C {devices/lab_pin.sym} 1810 -300 0 0 {name=l44 sig_type=std_logic lab=Vbn}
+C {devices/lab_pin.sym} 1880 -380 2 0 {name=l45 sig_type=std_logic lab=s0}
+C {devices/lab_pin.sym} 2090 -380 1 0 {name=l46 sig_type=std_logic lab=s1}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 2250 -380 3 0 {name=X5}
+C {madvlsi/gnd.sym} 2270 -340 0 0 {name=l48 lab=GND}
+C {madvlsi/vsource.sym} 2490 -260 0 0 {name=Vb3
+value=1.8}
+C {madvlsi/gnd.sym} 2300 -230 0 0 {name=l49 lab=GND}
+C {devices/lab_pin.sym} 2300 -380 2 0 {name=l55 sig_type=std_logic lab=s2}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 2440 -380 3 0 {name=X6}
+C {madvlsi/gnd.sym} 2460 -340 0 0 {name=l62 lab=GND}
+C {madvlsi/vsource.sym} 2680 -260 0 0 {name=Vb4
+value=1.8}
+C {madvlsi/gnd.sym} 2490 -230 0 0 {name=l77 lab=GND}
+C {devices/lab_pin.sym} 2490 -380 2 0 {name=l85 sig_type=std_logic lab=s3}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 2630 -380 3 0 {name=X7}
+C {madvlsi/gnd.sym} 2650 -340 0 0 {name=l88 lab=GND}
+C {madvlsi/vsource.sym} 2870 -260 0 0 {name=Vb5
+value=1.8}
+C {madvlsi/gnd.sym} 2680 -230 0 0 {name=l89 lab=GND}
+C {devices/lab_pin.sym} 2680 -380 2 0 {name=l93 sig_type=std_logic lab=s4}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 2820 -380 3 0 {name=X8}
+C {madvlsi/gnd.sym} 2840 -340 0 0 {name=l96 lab=GND}
+C {madvlsi/gnd.sym} 2870 -230 0 0 {name=l97 lab=GND}
+C {devices/lab_pin.sym} 2870 -380 2 0 {name=l101 sig_type=std_logic lab=s5}
+C {madvlsi/vsource.sym} 3060 -260 0 0 {name=Vb6
+value=1.8}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 3010 -380 3 0 {name=X4}
+C {madvlsi/gnd.sym} 3030 -340 0 0 {name=l50 lab=GND}
+C {devices/lab_pin.sym} 3060 -380 2 0 {name=l52 sig_type=std_logic lab=s6}
+C {madvlsi/gnd.sym} 3060 -230 0 0 {name=l53 lab=GND}
+C {devices/lab_pin.sym} 1990 -500 3 0 {name=l1 sig_type=std_logic lab=b0}
+C {devices/lab_pin.sym} 2290 -510 3 0 {name=l6 sig_type=std_logic lab=b2}
+C {devices/lab_pin.sym} 2190 -510 3 0 {name=l7 sig_type=std_logic lab=b1}
+C {devices/lab_pin.sym} 2790 -510 3 0 {name=l8 sig_type=std_logic lab=b5}
+C {devices/lab_pin.sym} 2490 -510 3 0 {name=l9 sig_type=std_logic lab=b3}
+C {devices/lab_pin.sym} 2590 -510 3 0 {name=l10 sig_type=std_logic lab=b4}
+C {devices/lab_pin.sym} 2890 -510 3 0 {name=l11 sig_type=std_logic lab=b6}
+C {madvlsi/vdd.sym} 3800 -1160 0 0 {name=l14 lab=VDD}
+C {madvlsi/ammeter1.sym} 3760 -1160 1 0 {name=Vimid}
