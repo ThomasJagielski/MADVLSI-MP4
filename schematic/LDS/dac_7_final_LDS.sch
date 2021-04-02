@@ -1076,7 +1076,7 @@ C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value=".cont
     set appendwrite = FALSE
     set wr_vecnames
     let code = 0
-    while code < 64
+    while code < 128
       if code eq 0
         let b0 = 0
       else
@@ -1121,7 +1121,7 @@ C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value=".cont
       alter vb6 $&b6
       save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
       op
-      wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_LDS_op-\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
+      wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_LDS_op-64x16-\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
       if code eq 0
         set appendwrite
         set wr_vecnames = FALSE
@@ -1198,8 +1198,8 @@ value=1.8}
 C {madvlsi/gnd.sym} 5280 -770 0 0 {name=l17 lab=GND}
 C {madvlsi/vdd.sym} 5280 -830 0 0 {name=l18 lab=VDD}
 C {madvlsi/nmos3.sym} 430 -1870 1 0 {name=M1
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1213,8 +1213,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 550 -1870 1 0 {name=M2
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1228,8 +1228,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 670 -1870 1 0 {name=M3
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1243,8 +1243,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 790 -1870 1 0 {name=M4
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1258,8 +1258,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1030 -1870 1 0 {name=M6
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1273,8 +1273,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1150 -1870 1 0 {name=M8
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1288,8 +1288,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1390 -1870 1 0 {name=M10
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1303,8 +1303,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1510 -1870 1 0 {name=M12
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1318,8 +1318,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1630 -1870 1 0 {name=M14
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1333,8 +1333,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1750 -1870 1 0 {name=M15
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1348,8 +1348,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 550 -2090 1 1 {name=M16
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1363,8 +1363,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 670 -2090 1 1 {name=M17
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1378,8 +1378,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 910 -2090 1 1 {name=M18
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1393,8 +1393,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1030 -2090 1 1 {name=M19
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1408,8 +1408,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1150 -2090 1 1 {name=M20
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1423,8 +1423,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1270 -2090 1 1 {name=M21
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1438,8 +1438,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1510 -2090 1 1 {name=M22
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1453,8 +1453,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1630 -2090 1 1 {name=M23
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1468,8 +1468,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 790 -2090 3 1 {name=Mdumb29
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1483,8 +1483,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1390 -2090 3 1 {name=Mdumb30
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1498,8 +1498,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 910 -1870 3 0 {name=Mdumb31
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1513,8 +1513,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1270 -1870 3 0 {name=Mdumb32
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1528,8 +1528,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1870 -1870 1 0 {name=M33
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1543,8 +1543,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1990 -1870 1 0 {name=M24
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1558,8 +1558,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2110 -1870 1 0 {name=M25
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1573,8 +1573,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2230 -1870 1 0 {name=M26
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1588,8 +1588,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2470 -1870 1 0 {name=M27
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1603,8 +1603,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2590 -1870 1 0 {name=M28
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1618,8 +1618,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2830 -1870 1 0 {name=M29
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1633,8 +1633,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2950 -1870 1 0 {name=M34
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1648,8 +1648,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3070 -1870 1 0 {name=M31
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1663,8 +1663,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3190 -1870 1 0 {name=M32
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1678,8 +1678,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2350 -1870 3 0 {name=Mdumb35
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1693,8 +1693,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2710 -1870 3 0 {name=Mdumb36
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1708,8 +1708,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1990 -2090 1 1 {name=M39
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1723,8 +1723,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2110 -2090 1 1 {name=M36
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1738,8 +1738,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2350 -2090 1 1 {name=M42
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1753,8 +1753,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2470 -2090 1 1 {name=M45
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1768,8 +1768,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2590 -2090 1 1 {name=M46
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1783,8 +1783,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2710 -2090 1 1 {name=M47
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1798,8 +1798,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2950 -2090 1 1 {name=M48
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1813,8 +1813,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3070 -2090 1 1 {name=M49
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1828,8 +1828,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2230 -2090 3 1 {name=Mdumb50
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1843,8 +1843,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2830 -2090 3 1 {name=Mdumb51
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1858,8 +1858,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1750 -2090 3 1 {name=Mdumb52
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1873,8 +1873,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1870 -2090 3 1 {name=Mdumb53
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1890,8 +1890,8 @@ spiceprefix=X
 C {madvlsi/gnd.sym} 200 -1750 1 0 {name=l2 lab=GND}
 C {madvlsi/vdd.sym} 200 -2210 3 0 {name=l3 lab=VDD}
 C {madvlsi/pmos3.sym} 3190 -2090 1 1 {name=Mdumb54
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1905,8 +1905,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3310 -2090 1 1 {name=Mdumb55
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1920,8 +1920,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3310 -1870 1 0 {name=Mdumb56
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1935,8 +1935,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 310 -1870 1 0 {name=Mdumb57
-L=4.0
-W=16
+L=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -1950,8 +1950,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 430 -2090 1 1 {name=Mdumb58
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1965,8 +1965,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 310 -2090 1 1 {name=Mdumb59
-L=4.0
-W=16
+L=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -1987,7 +1987,7 @@ C {madvlsi/ammeter1.sym} 160 -1790 1 1 {name=vbias}
 C {madvlsi/gnd.sym} 100 -1730 0 0 {name=l26 lab=GND}
 C {madvlsi/nmos3.sym} 4480 -1780 3 0 {name=M60
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2002,7 +2002,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4480 -2010 3 0 {name=M61
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2017,7 +2017,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4480 -2120 3 0 {name=M62
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2032,7 +2032,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4480 -1890 1 0 {name=M63
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2048,7 +2048,7 @@ spiceprefix=X
 C {madvlsi/vdd.sym} 4430 -2150 0 0 {name=l14 lab=VDD}
 C {madvlsi/nmos3.sym} 4880 -1780 3 0 {name=Mdumb64
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2063,7 +2063,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4880 -2010 3 0 {name=Mdumb65
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2078,7 +2078,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4880 -2120 3 0 {name=Mdumb66
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2093,7 +2093,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4880 -1890 3 0 {name=Mdumb67
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2108,7 +2108,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4380 -1780 3 0 {name=Mdumb68
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2123,7 +2123,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4380 -2010 3 0 {name=Mdumb69
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2138,7 +2138,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4380 -2120 3 0 {name=Mdumb70
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2153,7 +2153,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4380 -1890 3 0 {name=Mdumb71
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2176,7 +2176,7 @@ C {madvlsi/gnd.sym} 4350 -1980 0 0 {name=l31 lab=GND}
 C {madvlsi/gnd.sym} 4350 -2090 0 0 {name=l32 lab=GND}
 C {madvlsi/nmos3.sym} 4580 -1780 3 0 {name=M59
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2191,7 +2191,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4580 -2010 3 0 {name=M72
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2206,7 +2206,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4580 -2120 3 0 {name=M73
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2221,7 +2221,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4580 -1890 1 0 {name=M74
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2236,7 +2236,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4680 -1780 3 0 {name=M75
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2251,7 +2251,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4680 -2010 3 0 {name=M64
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2266,7 +2266,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4680 -2120 3 0 {name=M65
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2281,7 +2281,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4680 -1890 1 0 {name=M66
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2296,7 +2296,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4780 -1780 3 0 {name=M67
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2311,7 +2311,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4780 -2010 3 0 {name=M68
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2326,7 +2326,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4780 -2120 3 0 {name=M69
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2341,7 +2341,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4780 -1890 1 0 {name=M70
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2359,7 +2359,7 @@ C {madvlsi/gnd.sym} 4830 -1780 0 0 {name=l34 lab=GND}
 C {madvlsi/gnd.sym} 4430 -1780 0 0 {name=l35 lab=GND}
 C {madvlsi/pmos3.sym} 3790 -2010 1 0 {name=M76
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2374,7 +2374,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3890 -2010 1 0 {name=M77
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2389,7 +2389,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3990 -2010 1 0 {name=M78
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2404,7 +2404,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4090 -2010 1 0 {name=M79
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2419,7 +2419,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3790 -2120 3 0 {name=M80
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2434,7 +2434,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3890 -2120 3 0 {name=M81
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2449,7 +2449,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3990 -2120 3 0 {name=M82
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2464,7 +2464,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4090 -2120 3 0 {name=M83
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2481,7 +2481,7 @@ C {madvlsi/gnd.sym} 3940 -1730 0 0 {name=l36 lab=GND}
 C {madvlsi/vdd.sym} 3940 -2150 0 0 {name=l37 lab=VDD}
 C {madvlsi/pmos3.sym} 3690 -2010 1 0 {name=Mdumb45
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2496,7 +2496,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3690 -2120 1 0 {name=Mdumb46
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2511,7 +2511,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4190 -2010 1 0 {name=Mdumb47
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2526,7 +2526,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4190 -2120 1 0 {name=Mdumb48
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -2541,7 +2541,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3690 -1890 3 0 {name=Mdumb49
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2556,7 +2556,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3690 -1780 3 0 {name=Mdumb84
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2579,7 +2579,7 @@ C {madvlsi/vdd.sym} 4220 -2040 0 0 {name=l58 lab=VDD}
 C {madvlsi/vdd.sym} 4220 -2150 0 0 {name=l59 lab=VDD}
 C {madvlsi/nmos3.sym} 3790 -1890 3 0 {name=M51
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2594,7 +2594,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3790 -1780 3 0 {name=M52
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2609,7 +2609,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3890 -1890 3 0 {name=M53
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2624,7 +2624,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3890 -1780 3 0 {name=M54
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2639,7 +2639,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3990 -1890 3 0 {name=M55
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2654,7 +2654,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3990 -1780 1 0 {name=M56
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2669,7 +2669,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4090 -1890 3 0 {name=M57
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2684,7 +2684,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4090 -1780 1 0 {name=M58
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2699,7 +2699,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4190 -1890 3 0 {name=Mdumb85
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2714,7 +2714,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4190 -1780 3 0 {name=Mdumb60
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2735,7 +2735,7 @@ m=1}
 C {madvlsi/gnd.sym} 3460 -1950 0 0 {name=l64 lab=GND}
 C {madvlsi/nmos3.sym} 510 -1360 1 0 {name=M50
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2750,7 +2750,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 610 -1360 1 0 {name=M71
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2765,7 +2765,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 710 -1360 1 0 {name=Mdumb72
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2780,7 +2780,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 810 -1360 1 0 {name=M84
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2795,7 +2795,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 910 -1360 1 0 {name=Mdumb86
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2810,7 +2810,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1010 -1360 1 0 {name=M87
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2825,7 +2825,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1110 -1360 1 0 {name=Mdumb88
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2840,7 +2840,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1210 -1360 1 0 {name=M89
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2855,7 +2855,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1310 -1360 1 0 {name=Mdumb90
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2870,7 +2870,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1410 -1360 1 0 {name=M91
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2885,7 +2885,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1510 -1360 1 0 {name=Mdumb92
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2900,7 +2900,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1610 -1360 1 0 {name=M93
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2915,7 +2915,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1710 -1360 1 0 {name=Mdumb94
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2930,7 +2930,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1810 -1360 1 0 {name=M95
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2945,7 +2945,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1910 -1360 1 0 {name=M96
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2960,7 +2960,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 510 -1130 1 0 {name=M97
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2975,7 +2975,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 610 -1130 1 0 {name=M98
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -2990,7 +2990,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 710 -1130 1 0 {name=M99
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3005,7 +3005,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 810 -1130 1 0 {name=M100
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3020,7 +3020,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 910 -1130 1 0 {name=Mdumb101
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3035,7 +3035,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1010 -1130 1 0 {name=M102
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3050,7 +3050,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1110 -1130 1 0 {name=M103
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3065,7 +3065,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1210 -1130 1 0 {name=M104
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3080,7 +3080,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1310 -1130 1 0 {name=M105
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3095,7 +3095,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1410 -1130 1 0 {name=Mdumb106
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3110,7 +3110,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1510 -1130 1 0 {name=M107
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3125,7 +3125,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1610 -1130 1 0 {name=M108
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3140,7 +3140,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1710 -1130 1 0 {name=M109
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3155,7 +3155,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1810 -1130 1 0 {name=M110
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3170,7 +3170,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 710 -920 3 0 {name=M111
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3185,7 +3185,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 810 -920 3 0 {name=Mdumb112
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3200,7 +3200,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 910 -920 3 0 {name=M113
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3215,7 +3215,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1010 -920 3 0 {name=M114
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3230,7 +3230,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1110 -920 3 0 {name=Mdumb115
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3245,7 +3245,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1210 -920 3 0 {name=M116
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3260,7 +3260,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1310 -920 3 0 {name=M117
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3275,7 +3275,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1410 -920 3 0 {name=Mdumb118
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3290,7 +3290,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1510 -920 3 0 {name=M119
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3305,7 +3305,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1610 -920 3 0 {name=M120
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3320,7 +3320,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2010 -1360 1 0 {name=Mdumb121
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3335,7 +3335,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2110 -1360 1 0 {name=Mdumb122
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3350,7 +3350,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 410 -1360 1 0 {name=Mdumb123
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3365,7 +3365,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 310 -1360 1 0 {name=Mdumb124
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3380,7 +3380,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 410 -1130 1 0 {name=Mdumb125
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3395,7 +3395,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 310 -1130 1 0 {name=Mdumb126
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3410,7 +3410,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1910 -1130 1 0 {name=Mdumb127
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3425,7 +3425,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2010 -1130 1 0 {name=Mdumb128
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3440,7 +3440,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2110 -1130 1 0 {name=M129
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3455,7 +3455,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1710 -920 3 0 {name=Mdumb130
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3470,7 +3470,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1810 -920 3 0 {name=Mdumb131
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3485,7 +3485,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1910 -920 3 0 {name=Mdumb132
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3500,7 +3500,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2010 -920 3 0 {name=Mdumb133
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3515,7 +3515,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2110 -920 3 0 {name=Mdumb134
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3530,7 +3530,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 610 -920 3 0 {name=Mdumb135
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3545,7 +3545,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 510 -920 3 0 {name=Mdumb136
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3560,7 +3560,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 410 -920 3 0 {name=Mdumb137
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3575,7 +3575,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 310 -920 3 0 {name=Mdumb138
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3643,7 +3643,7 @@ C {devices/lab_pin.sym} 1310 -790 3 0 {name=l106 sig_type=std_logic lab=b4}
 C {devices/lab_pin.sym} 1610 -790 3 0 {name=l107 sig_type=std_logic lab=b6}
 C {madvlsi/pmos3.sym} 3520 -1340 3 0 {name=M140
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3658,7 +3658,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3620 -1340 3 0 {name=M2a
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3673,7 +3673,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3720 -1340 3 0 {name=M141
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3688,7 +3688,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3820 -1340 3 0 {name=M4a
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3703,7 +3703,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3920 -1340 3 0 {name=M5a
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3718,7 +3718,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4020 -1340 3 0 {name=M5b
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3733,7 +3733,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4120 -1340 3 0 {name=M4b
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3748,7 +3748,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4220 -1340 3 0 {name=M142
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3763,7 +3763,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4320 -1340 3 0 {name=M2b
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3778,7 +3778,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4420 -1340 3 0 {name=M143
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3793,7 +3793,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3420 -1340 3 0 {name=M1a
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3808,7 +3808,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4520 -1340 3 0 {name=M1b
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3823,7 +3823,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3320 -1340 3 0 {name=M144
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3838,7 +3838,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4620 -1340 3 0 {name=M145
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3854,7 +3854,7 @@ spiceprefix=X
 C {madvlsi/vdd.sym} 2840 -1530 0 0 {name=l116 lab=VDD}
 C {madvlsi/pmos3.sym} 4720 -1340 3 0 {name=M146
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3869,7 +3869,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 4820 -1340 3 0 {name=M147
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3884,7 +3884,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3220 -1340 3 0 {name=M148
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3899,7 +3899,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3120 -1340 3 0 {name=M149
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3914,7 +3914,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 3020 -1340 3 0 {name=M150
 L=4
-W=16
+W=64
 body=VDD
 nf=1
 mult=1
@@ -3933,7 +3933,7 @@ C {madvlsi/gnd.sym} 2670 -1130 0 0 {name=l117 lab=GND}
 C {madvlsi/ammeter1.sym} 2670 -1240 0 0 {name=VIout}
 C {madvlsi/nmos3.sym} 3030 -730 1 0 {name=M151
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3948,7 +3948,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3130 -730 1 0 {name=M152
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3963,7 +3963,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3230 -730 1 0 {name=Mdumb153
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3978,7 +3978,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3330 -730 1 0 {name=M154
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -3993,7 +3993,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3430 -730 1 0 {name=Mdumb155
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4008,7 +4008,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3530 -730 1 0 {name=M156
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4023,7 +4023,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3630 -730 1 0 {name=Mdumb34
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4038,7 +4038,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3730 -730 1 0 {name=M157
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4053,7 +4053,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3830 -730 1 0 {name=Mdumb37
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4068,7 +4068,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3930 -730 1 0 {name=M158
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4083,7 +4083,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4030 -730 1 0 {name=Mdumb40
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4098,7 +4098,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4130 -730 1 0 {name=M159
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4113,7 +4113,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4230 -730 1 0 {name=Mdumb43
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4128,7 +4128,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4330 -730 1 0 {name=M160
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4143,7 +4143,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4430 -730 1 0 {name=M161
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4158,7 +4158,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3030 -500 1 0 {name=M162
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4173,7 +4173,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3130 -500 1 0 {name=M163
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4188,7 +4188,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3230 -500 1 0 {name=M164
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4203,7 +4203,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3330 -500 1 0 {name=M165
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4218,7 +4218,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3430 -500 1 0 {name=Mdumb166
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4233,7 +4233,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3530 -500 1 0 {name=M167
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4248,7 +4248,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3630 -500 1 0 {name=M168
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4263,7 +4263,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3730 -500 1 0 {name=M169
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4278,7 +4278,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3830 -500 1 0 {name=M170
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4293,7 +4293,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3930 -500 1 0 {name=Mdumb171
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4308,7 +4308,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4030 -500 1 0 {name=M172
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4323,7 +4323,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4130 -500 1 0 {name=M173
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4338,7 +4338,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4230 -500 1 0 {name=M174
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4353,7 +4353,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4330 -500 1 0 {name=M175
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4368,7 +4368,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3230 -290 3 0 {name=M176
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4383,7 +4383,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3330 -290 3 0 {name=Mdumb177
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4398,7 +4398,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3430 -290 3 0 {name=M178
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4413,7 +4413,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3530 -290 3 0 {name=M179
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4428,7 +4428,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3630 -290 3 0 {name=Mdumb180
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4443,7 +4443,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3730 -290 3 0 {name=M181
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4458,7 +4458,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3830 -290 3 0 {name=M182
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4473,7 +4473,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3930 -290 3 0 {name=Mdumb183
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4488,7 +4488,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4030 -290 3 0 {name=M184
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4503,7 +4503,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4130 -290 3 0 {name=M185
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4518,7 +4518,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4530 -730 1 0 {name=Mdumb74
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4533,7 +4533,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4630 -730 1 0 {name=Mdumb75
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4548,7 +4548,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2930 -730 1 0 {name=Mdumb76
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4563,7 +4563,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2830 -730 1 0 {name=Mdumb77
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4578,7 +4578,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2930 -500 1 0 {name=Mdumb78
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4593,7 +4593,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2830 -500 1 0 {name=Mdumb79
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4608,7 +4608,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4430 -500 1 0 {name=Mdumb80
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4623,7 +4623,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4530 -500 1 0 {name=Mdumb81
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4638,7 +4638,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4630 -500 1 0 {name=M186
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4653,7 +4653,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4230 -290 3 0 {name=Mdumb83
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4668,7 +4668,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4330 -290 3 0 {name=Mdumb187
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4683,7 +4683,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4430 -290 3 0 {name=Mdumb188
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4698,7 +4698,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4530 -290 3 0 {name=Mdumb189
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4713,7 +4713,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 4630 -290 3 0 {name=Mdumb87
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4728,7 +4728,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3130 -290 3 0 {name=Mdumb190
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4743,7 +4743,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 3030 -290 3 0 {name=Mdumb89
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4758,7 +4758,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2930 -290 3 0 {name=Mdumb191
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
@@ -4773,7 +4773,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 2830 -290 3 0 {name=Mdumb91
 L=4
-W=16
+W=64
 body=GND
 nf=1
 mult=1
