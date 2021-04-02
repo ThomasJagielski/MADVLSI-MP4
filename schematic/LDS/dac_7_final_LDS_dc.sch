@@ -1070,13 +1070,12 @@ value=".option wnflag=1
 }
 C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value=".control
   set wr_singlescale
-  let runs = 10
+  let runs = 100
   let run = 1
   while run <= runs
     set appendwrite = FALSE
-    *set wr_vecnames
     let code = 0
-    while code < 64
+    while code < 128
       if code eq 0
         let b0 = 0
       else
@@ -1123,14 +1122,11 @@ C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value=".cont
       save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
       set wr_vecnames
       wrdata ~/Documents/MADVLSI-MP4/schematic/data/final/dac7_LDS_Vout-\{$&code\}-\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-      *if code eq 0
-      *  set appendwrite
-      *  set wr_vecnames = FALSE
-      *end
       let code = code + 1
     end
     reset
     let run = run + 1
+    destroy
   end
 .endc"}
 C {madvlsi/vsource.sym} 5280 -800 0 0 {name=Vdd
