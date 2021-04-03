@@ -1,0 +1,26 @@
+* SPICE3 file created from low-voltage_super-wilson.ext - technology: sky130A
+
+
+* Top level circuit low-voltage_super-wilson
+
+X0 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=5.76e+14p pd=3.6e+08u as=0p ps=0u w=1.6e+07u l=4e+06u
+X1 a_7610_0# VP a_6810_n120# VP sky130_fd_pr__pfet_01v8 ad=2.56e+14p pd=1.6e+08u as=1.28e+14p ps=8e+07u w=1.6e+07u l=4e+06u
+X2 Vout a_6810_n120# a_7610_0# VP sky130_fd_pr__pfet_01v8 ad=1.28e+14p pd=8e+07u as=0p ps=0u w=1.6e+07u l=4e+06u
+X3 a_15610_0# a_11610_n70# a_7610_0# VP sky130_fd_pr__pfet_01v8 ad=6.4e+13p pd=4e+07u as=0p ps=0u w=1.6e+07u l=4e+06u
+X4 a_7610_0# a_6810_n120# Vout VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X5 VP VP Vout VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X6 a_7610_0# a_11610_n70# a_15610_0# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X7 a_6810_n120# VP a_7610_0# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X8 VP a_11610_n70# a_7610_0# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X9 a_6810_n120# a_6810_n120# Iin VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.28e+14p ps=8e+07u w=1.6e+07u l=4e+06u
+X10 VP a_11610_n70# Iin VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X11 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X12 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X13 a_7610_0# a_11610_n70# VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X14 Vout VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X15 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X16 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X17 Iin a_11610_n70# VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X18 Iin a_6810_n120# a_6810_n120# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+.end
+
