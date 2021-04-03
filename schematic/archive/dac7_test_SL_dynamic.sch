@@ -194,12 +194,10 @@ value=1.8}
 C {madvlsi/vdd.sym} -890 -290 0 0 {name=l9 lab=VDD}
 C {madvlsi/gnd.sym} -890 -230 0 0 {name=l10 lab=GND}
 C {madvlsi/vsource.sym} -360 210 0 0 {name=Vb0
-value=1.8
-*"pwl 1n 0 2u 1.8 32u 1.8 33u 0 100u 0 "}
+value="pwl 1m 0 2m 1.8 32m 1.8 33m 0 100m 0 "}
 C {madvlsi/gnd.sym} -360 240 0 0 {name=l11 lab=GND}
 C {madvlsi/vsource.sym} -170 210 0 0 {name=Vb1
-value=1.8
-*"pwl 32u 0 33u 1.8 63u 1.8 64u 0 100u 0"}
+value="pwl 32m 0 33m 1.8 63m 1.8 64m 0 100m 0"}
 C {madvlsi/gnd.sym} -170 240 0 0 {name=l12 lab=GND}
 C {madvlsi/nmos3.sym} -380 -290 0 0 {name=M9
 L=\{Lt\}
@@ -428,136 +426,6 @@ C {devices/lab_pin.sym} -240 -320 0 0 {name=l37 sig_type=std_logic lab=Vdr1}
 C {devices/lab_pin.sym} 0 -320 2 0 {name=l38 sig_type=std_logic lab=Vdr2}
 C {madvlsi/ammeter1.sym} -380 -260 0 0 {name=VIb4}
 C {madvlsi/ammeter1.sym} -190 -260 0 0 {name=VIb5}
-C {devices/code.sym} 1360 -290 0 0 {name=SPICE only_toplevel=false value=".param Wt = 6
-.param Lt = 0.5
-.control
-*** change W and L for the next two lines as well !***
-  let myW = 6
-  let myL = 0.5
-  set wr_singlescale
-  let runs = 10
-  let run = 1
-  while run <= runs
-    set appendwrite = FALSE
-    set wr_vecnames
-    let code = 0
-    while code < 32
-      if code eq 0
-        let b0 = 0
-      else
-        let b0 = (code % 2) * 1.8
-      end
-      if floor(code / 2) eq 0
-        let b1 = 0
-      else
-        let b1 = (floor(code / 2) % 2) * 1.8
-      end
-      if floor(code / 4) eq 0
-        let b2 = 0
-      else
-        let b2 = (floor(code / 4) % 2) * 1.8
-      end
-      if floor(code / 8) eq 0
-        let b3 = 0
-      else
-        let b3 = floor(code / 8) % 2 * 1.8
-      end
-      if floor(code / 16) eq 0
-        let b4 = 0
-      else 
-        let b4 = floor(code / 16) % 2 * 1.8
-      end
-      if floor(code / 32) eq 0
-        let b5 = 0
-      else
-        let b5 = floor(code / 32) % 2 * 1.8
-      end
-      if floor(code / 64) eq 0
-        let b6 = 0
-      else
-        let b6 = floor(code / 64) % 2 * 1.8
-      end
-      alter vb0 $&b0
-      alter vb1 $&b1
-      alter vb2 $&b2
-      alter vb3 $&b3
-      alter vb4 $&b4
-      alter vb5 $&b5
-      alter vb6 $&b6
-      save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-      op
-      wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}op-\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-      if code eq 0
-        set appendwrite
-        set wr_vecnames = FALSE
-      end
-      let code = code + 1
-    end
-    reset
-    let run = run + 1
-  end
-
-  set appendwrite = FALSE
-  reset
-  set wr_singlescale
-  set wr_vecnames
-  alter vb0 1.8
-  alter vb1 1.8
-  alter vb2 1.8
-  alter vb3 1.8
-  alter vb4 1.8
-  alter vb5 1.8
-  alter vb6 1.8
-  save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-  dc Voutt 0 1.8 0.01
-  run
-  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vout-1.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-
-  reset
-  set wr_singlescale
-  set wr_vecnames
-  alter vb0 1.8
-  alter vb1 1.8
-  alter vb2 1.8
-  alter vb3 1.8
-  alter vb4 1.8
-  alter vb5 1.8
-  alter vb6 0
-  save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-  dc Voutt 0 1.8 0.01
-  run
-  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vout-2.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-
-  reset
-  set wr_singlescale
-  set wr_vecnames
-  alter vb0 1.8
-  alter vb1 1.8
-  alter vb2 1.8
-  alter vb3 1.8
-  alter vb4 1.8
-  alter vb5 1.8
-  alter vb6 1.8
-  save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-  dc Voutt 0 1.8 0.01
-  run
-  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vdd-1.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-
-  reset
-  set wr_singlescale
-  set wr_vecnames
-  alter vb0 1.8
-  alter vb1 1.8
-  alter vb2 1.8
-  alter vb3 1.8
-  alter vb4 1.8
-  alter vb5 1.8
-  alter vb6 0
-  save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-  dc Voutt 0 1.8 0.01
-  run
-  wrdata ~/Documents/MADVLSI-MP4/schematic/data/dac7_L\{$&myL\}W\{$&myW\}vdd-2.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
-.endc"}
 C {madvlsi/gnd.sym} 1090 -120 0 0 {name=l40 lab=GND}
 C {madvlsi/nmos3.sym} 1160 40 1 0 {name=M24
 L=\{Lt\}
@@ -1319,7 +1187,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/gnd.sym} 760 -60 0 0 {name=l90 lab=GND}
-C {madvlsi/ammeter1.sym} 760 -330 0 0 {name=Vmeas8}
+C {madvlsi/ammeter1.sym} 760 -330 0 0 {name=Vmeas}
 C {devices/lab_pin.sym} 730 50 2 0 {name=l91 sig_type=std_logic lab=b6}
 C {devices/lab_pin.sym} 780 90 2 0 {name=l92 sig_type=std_logic lab=s6}
 C {madvlsi/ammeter1.sym} 760 -130 0 0 {name=VIb15}
@@ -1327,7 +1195,18 @@ C {devices/lab_pin.sym} 760 -180 2 0 {name=l93 sig_type=std_logic lab=Vb6}
 C {madvlsi/ammeter1.sym} 760 -260 0 0 {name=VIb16}
 C {devices/lab_pin.sym} -330 -350 2 0 {name=l95 sig_type=std_logic lab=Vdr0}
 C {madvlsi/vsource.sym} 20 210 0 0 {name=Vb2
-value=1.8
-*"pwl 32u 0 33u 1.8 63u 1.8 64u 0 100u 0"}
+value="pwl 64m 0 65m 1.8 95m 1.8 96m 0 100m 0"}
 C {devices/lab_pin.sym} 1090 -210 2 0 {name=l3 sig_type=std_logic lab=Vout}
 C {madvlsi/ammeter1.sym} 1090 -190 0 0 {name=Viout}
+C {devices/code_shown.sym} 1350 -270 0 0 {name=SPICE1 only_toplevel=false value=".param Wt = 12
+.param Lt = 3
+.control
+tran 0.01m 120m
+run
+plot tran1.i(Vmeas) tran1.i(Vbias) tran1.i(VIout)
+reset
+*dc Vdd 0 1.8 0.01
+*plot dc.i(Vmeas) dc.i(Vbias) dc.i(VIb3) dc.i(VIout)
+*plot dc.v(Vdr3) dc.v(Vbout)
+.endc
+.save all"}

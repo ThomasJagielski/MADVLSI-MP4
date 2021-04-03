@@ -1,0 +1,20 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class layout/ibias_vg.spice:  Merged 61 devices.
+Class schematic/LDS/ibias_vg_lvs.spice:  Merged 61 devices.
+
+Subcircuit summary:
+Circuit 1: layout/ibias_vg.spice           |Circuit 2: schematic/LDS/ibias_vg_lvs.spic 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (26)               |sky130_fd_pr__nfet_01v8 (26)               
+sky130_fd_pr__pfet_01v8 (17)               |sky130_fd_pr__pfet_01v8 (17)               
+Number of devices: 43                      |Number of devices: 43                      
+Number of nets: 25                         |Number of nets: 25                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes layout/ibias_vg.spice and schematic/LDS/ibias_vg_lvs.spice are equivalent.
+Circuits match uniquely.
