@@ -1,12 +1,38 @@
 magic
 tech sky130A
-timestamp 1617549348
+timestamp 1617553432
+<< nwell >>
+rect 9225 160 9615 220
+<< poly >>
+rect 9225 205 9615 215
+rect 9225 185 9235 205
+rect 9605 185 9615 205
+rect 9225 25 9615 185
+rect 9225 5 9235 25
+rect 9605 5 9615 25
+rect 9225 -5 9615 5
+<< polycont >>
+rect 9235 185 9605 205
+rect 9235 5 9605 25
+<< locali >>
+rect 9225 205 9615 280
+rect 9225 185 9235 205
+rect 9605 185 9615 205
+rect 9225 175 9615 185
+rect 11645 100 12015 275
+rect 11645 60 13625 100
+rect 9225 25 12025 35
+rect 9225 5 9235 25
+rect 9605 5 12025 25
+rect 9225 -5 12025 5
+rect 11635 -1830 12025 -5
+rect 13235 -1645 13625 60
 use dac_ladder  dac_ladder_0
-timestamp 1617549086
+timestamp 1617552636
 transform 1 0 4730 0 1 -3425
-box -4700 -4095 11700 3405
+box -4700 -4135 11700 3405
 use low-voltage_super-wilson  low-voltage_super-wilson_0
-timestamp 1617457410
+timestamp 1617552636
 transform 1 0 615 0 1 275
 box -615 -275 15825 1785
 << end >>
