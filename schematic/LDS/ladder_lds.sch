@@ -246,7 +246,7 @@ N 820 -480 860 -480 { lab=b2}
 N 610 -480 760 -480 { lab=b1}
 C {madvlsi/nmos3.sym} 360 -1050 1 0 {name=M50
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -261,7 +261,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 460 -1050 1 0 {name=M71
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -276,7 +276,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 560 -1050 1 0 {name=Mdumb72
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -291,7 +291,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 660 -1050 1 0 {name=M84
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -306,7 +306,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 760 -1050 1 0 {name=Mdumb86
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -321,7 +321,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 860 -1050 1 0 {name=M87
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -336,7 +336,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 960 -1050 1 0 {name=Mdumb88
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -351,7 +351,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1060 -1050 1 0 {name=M89
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -366,7 +366,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1160 -1050 1 0 {name=Mdumb90
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -381,7 +381,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1260 -1050 1 0 {name=M91
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -396,7 +396,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1360 -1050 1 0 {name=Mdumb92
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -411,7 +411,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1460 -1050 1 0 {name=M93
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -426,7 +426,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1560 -1050 1 0 {name=Mdumb94
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -441,7 +441,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1660 -1050 1 0 {name=M95
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -456,7 +456,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1760 -1050 1 0 {name=M96
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -471,7 +471,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 360 -820 1 0 {name=M97
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -486,7 +486,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 460 -820 1 0 {name=M98
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -501,7 +501,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 560 -820 1 0 {name=M99
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -516,7 +516,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 660 -820 1 0 {name=M100
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -531,7 +531,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 760 -820 1 0 {name=Mdumb101
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -546,7 +546,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 860 -820 1 0 {name=M102
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -561,7 +561,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 960 -820 1 0 {name=M103
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -576,7 +576,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1060 -820 1 0 {name=M104
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -591,7 +591,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1160 -820 1 0 {name=M105
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -606,7 +606,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1260 -820 1 0 {name=Mdumb106
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -621,7 +621,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1360 -820 1 0 {name=M107
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -636,7 +636,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1460 -820 1 0 {name=M108
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -651,7 +651,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1560 -820 1 0 {name=M109
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -666,7 +666,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1660 -820 1 0 {name=M110
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -681,7 +681,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 560 -610 3 0 {name=M111
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -696,7 +696,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 660 -610 3 0 {name=Mdumb112
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -711,7 +711,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 760 -610 3 0 {name=M113
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -726,7 +726,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 860 -610 3 0 {name=M114
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -741,7 +741,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 960 -610 3 0 {name=Mdumb115
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -756,7 +756,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1060 -610 3 0 {name=M116
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -771,7 +771,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1160 -610 3 0 {name=M117
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -786,7 +786,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1260 -610 3 0 {name=Mdumb118
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -801,7 +801,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1360 -610 3 0 {name=M119
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -816,7 +816,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1460 -610 3 0 {name=M120
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -831,7 +831,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1860 -1050 1 0 {name=Mdumb121
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -846,7 +846,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1960 -1050 1 0 {name=Mdumb122
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -861,7 +861,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 260 -1050 1 0 {name=Mdumb123
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -876,7 +876,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 160 -1050 1 0 {name=Mdumb124
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -891,7 +891,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 260 -820 1 0 {name=Mdumb125
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -906,7 +906,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 160 -820 1 0 {name=Mdumb126
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -921,7 +921,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1760 -820 1 0 {name=Mdumb127
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -936,7 +936,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1860 -820 1 0 {name=Mdumb128
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -951,7 +951,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1960 -820 1 0 {name=M129
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -966,7 +966,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1560 -610 3 0 {name=Mdumb130
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -981,7 +981,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1660 -610 3 0 {name=Mdumb131
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -996,7 +996,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1760 -610 3 0 {name=Mdumb132
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -1011,7 +1011,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1860 -610 3 0 {name=Mdumb133
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -1026,7 +1026,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1960 -610 3 0 {name=Mdumb134
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -1041,7 +1041,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 460 -610 3 0 {name=Mdumb135
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -1056,7 +1056,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 360 -610 3 0 {name=Mdumb136
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -1071,7 +1071,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 260 -610 3 0 {name=Mdumb137
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1
@@ -1086,7 +1086,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 160 -610 3 0 {name=Mdumb138
 L=4
-W=64
+W=16
 body=GND
 nf=1
 mult=1

@@ -1,0 +1,16 @@
+Equate elements:  no current cell.
+Class layout/dac_ladder.spice:  Merged 23 devices.
+Class LVS/LVS/ladder/ladder_lds.spice:  Merged 23 devices.
+
+Subcircuit summary:
+Circuit 1: layout/dac_ladder.spice         |Circuit 2: LVS/LVS/ladder/ladder_lds.spice 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (34)               |sky130_fd_pr__nfet_01v8 (34)               
+Number of devices: 34                      |Number of devices: 34                      
+Number of nets: 18                         |Number of nets: 18                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes layout/dac_ladder.spice and LVS/LVS/ladder/ladder_lds.spice are equivalent.
+Circuits match uniquely.
