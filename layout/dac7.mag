@@ -1,0 +1,12 @@
+magic
+tech sky130A
+timestamp 1617549348
+use dac_ladder  dac_ladder_0
+timestamp 1617549086
+transform 1 0 4730 0 1 -3425
+box -4700 -4095 11700 3405
+use low-voltage_super-wilson  low-voltage_super-wilson_0
+timestamp 1617457410
+transform 1 0 615 0 1 275
+box -615 -275 15825 1785
+<< end >>
