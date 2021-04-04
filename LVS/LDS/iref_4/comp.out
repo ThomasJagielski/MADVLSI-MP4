@@ -1,0 +1,20 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class ibias_vg_oglvs.spice:  Merged 21 devices.
+Class ibias_vg_lvs.spice:  Merged 21 devices.
+
+Subcircuit summary:
+Circuit 1: ibias_vg_oglvs.spice            |Circuit 2: ibias_vg_lvs.spice              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (7)                |sky130_fd_pr__nfet_01v8 (7)                
+sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (8)                
+r (1)                                      |r (1)                                      
+c (1)                                      |c (1)                                      
+Number of devices: 17                      |Number of devices: 17                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes ibias_vg_oglvs.spice and ibias_vg_lvs.spice are equivalent.
+Circuits match uniquely.

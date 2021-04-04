@@ -11,11 +11,11 @@ N -160 90 -150 90 { lab=s1}
 N -150 90 -150 180 { lab=s1}
 N -260 90 -250 90 { lab=s0}
 N -250 90 -250 180 { lab=s0}
-N -250 -200 -120 -200 { lab=Vb1}
+N -190 -200 -120 -200 { lab=Vb1}
 N -190 -260 -190 -200 { lab=Vb1}
 N -380 -260 -380 -200 { lab=Vb0}
-N -410 -290 -220 -290 { lab=Vg}
-N -220 -290 -30 -290 { lab=Vg}
+N -280 -290 -90 -290 { lab=Vg}
+N -90 -290 -30 -290 { lab=Vg}
 N -60 -200 0 -200 { lab=Vb2}
 N -280 -290 -280 -230 { lab=Vg}
 N -90 -290 -90 -230 { lab=Vg}
@@ -26,13 +26,12 @@ N -100 -90 -100 50 { lab=b2}
 N -230 -90 -230 50 { lab=b1}
 N -230 50 -200 50 { lab=b1}
 N -410 50 -300 50 { lab=b0}
-N -500 -290 -410 -290 { lab=Vg}
-N -410 -90 -410 -60 { lab=b0}
+N -500 -290 -280 -290 { lab=Vg}
+N -410 -90 -410 50 { lab=b0}
 N -320 130 -320 170 { lab=Vbn}
 N -370 130 -360 130 { lab=Vbp}
 N -220 130 -220 170 { lab=Vbn}
 N -120 130 -120 170 { lab=Vbn}
-N -410 -60 -410 50 { lab=b0}
 N -100 -90 -30 -90 { lab=b2}
 N -230 -90 -220 -90 { lab=b1}
 N -490 150 -470 150 { lab=#net1}
@@ -40,20 +39,19 @@ N -380 -200 -380 -130 { lab=Vb0}
 N -190 -200 -190 -130 { lab=Vb1}
 N 0 -200 -0 -130 { lab=Vb2}
 N -800 -80 -780 -80 { lab=#net2}
-N -800 -270 -780 -270 { lab=Vbp}
+N -800 -270 -680 -270 { lab=Vbp}
 N -800 -170 -780 -170 { lab=#net2}
 N -800 -220 -800 -170 { lab=#net2}
 N -800 -220 -750 -220 { lab=#net2}
 N -750 -220 -750 -200 { lab=#net2}
 N -750 -240 -750 -220 { lab=#net2}
 N -750 -120 -750 -110 { lab=#net3}
-N -650 -240 -650 -200 { lab=Vg}
-N -780 -270 -680 -270 { lab=Vbp}
+N -650 -210 -650 -200 { lab=Vg}
 N -650 -140 -650 -130 { lab=#net4}
 N -750 -130 -650 -130 { lab=#net4}
 N -750 -140 -750 -130 { lab=#net4}
 N -800 -170 -800 -80 { lab=#net2}
-N -620 -170 -590 -170 { lab=Vg}
+N -610 -170 -590 -170 { lab=Vg}
 N -650 -210 -610 -210 { lab=Vg}
 N -610 -210 -610 -170 { lab=Vg}
 N -380 -330 -380 -320 { lab=#net5}
@@ -76,7 +74,7 @@ N 300 -110 350 -110 { lab=#net9}
 N 410 -110 470 -110 { lab=#net10}
 N 470 -170 470 -110 { lab=#net10}
 N 300 -170 300 -110 { lab=#net9}
-N 240 -200 440 -200 { lab=Vg}
+N 380 -200 440 -200 { lab=Vg}
 N 300 -350 300 -230 { lab=#net11}
 N 340 -310 340 -260 { lab=#net12}
 N 340 -260 470 -260 { lab=#net12}
@@ -86,6 +84,10 @@ N 470 -110 470 -80 { lab=#net10}
 N 270 -50 270 10 { lab=Vbn}
 N 440 -50 440 -20 { lab=GND}
 N 440 -20 470 -20 { lab=GND}
+N -250 -200 -190 -200 { lab=Vb1}
+N -650 -240 -650 -210 { lab=Vg}
+N -620 -170 -610 -170 { lab=Vg}
+N 240 -200 380 -200 { lab=Vg}
 C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} -300 90 3 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} -200 90 3 0 {name=X3}
 C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} -100 90 3 0 {name=X4}
@@ -244,8 +246,11 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 120 160 0 0 {name=SPICE only_toplevel=false value=".dc Vout 0 1.8 0.0001
-.save all"}
+C {devices/code_shown.sym} 120 160 0 0 {name=SPICE only_toplevel=false value=".control
+dc Vout 0 1.8 0.01
+run
+save all
+.endc"}
 C {madvlsi/ammeter1.sym} 0 -330 0 0 {name=Vmeas}
 C {devices/lab_pin.sym} -340 50 1 0 {name=l14 sig_type=std_logic lab=b0}
 C {devices/lab_pin.sym} -230 10 2 0 {name=l15 sig_type=std_logic lab=b1}
