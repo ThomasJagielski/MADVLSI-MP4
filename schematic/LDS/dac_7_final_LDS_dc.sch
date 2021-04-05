@@ -1070,8 +1070,8 @@ value=".option wnflag=1
 }
 C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value=".control
   set wr_singlescale
-  let runs = 10
-  let run = 1
+  let runs = 100
+  let run = 11
   while run <= runs
     set appendwrite = FALSE
     let code = 0
