@@ -29,7 +29,6 @@ N 280 -130 280 -120 { lab=S}
 N 90 -330 90 -230 { lab=S}
 N 90 -330 400 -330 { lab=S}
 N 400 -340 400 -330 { lab=S}
-C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/inverter.sym} 150 -230 0 0 {name=X2}
 C {madvlsi/vdd.sym} 150 -270 0 0 {name=l3 lab=VDD}
 C {madvlsi/gnd.sym} 150 -190 0 0 {name=l4 lab=GND}
 C {devices/ipin.sym} 70 -230 0 0 {name=p2 lab=S}
@@ -96,3 +95,4 @@ spiceprefix=X
 C {devices/opin.sym} 490 -290 0 0 {name=p6 lab=Y}
 C {devices/ipin.sym} 70 -370 0 0 {name=p7 lab=A}
 C {devices/ipin.sym} 70 -90 0 0 {name=p8 lab=B}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/inverter.sym} 150 -230 0 0 {name=X1}

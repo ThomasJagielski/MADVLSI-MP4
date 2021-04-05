@@ -1070,8 +1070,8 @@ value=".option wnflag=1
 }
 C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value=".control
   set wr_singlescale
-  let runs = 100
-  let run = 49
+  let runs = 80
+  let run = 56
   while run <= runs
     set appendwrite = FALSE
     let code = 0
@@ -3527,8 +3527,6 @@ spiceprefix=X
 C {devices/lab_pin.sym} 2160 -1420 2 0 {name=l24 sig_type=std_logic lab=Vg}
 C {madvlsi/vdd.sym} 240 -1540 0 0 {name=l25 lab=VDD}
 C {madvlsi/gnd.sym} 260 -780 0 0 {name=l65 lab=GND}
-C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 550 -660 3 0 {name=X1}
-C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 760 -660 3 0 {name=X9}
 C {madvlsi/gnd.sym} 570 -620 0 0 {name=l71 lab=GND}
 C {madvlsi/gnd.sym} 780 -620 0 0 {name=l72 lab=GND}
 C {madvlsi/vsource.sym} 810 -540 0 0 {name=Vb1
@@ -3540,25 +3538,20 @@ C {madvlsi/gnd.sym} 1020 -510 0 0 {name=l74 lab=GND}
 C {devices/lab_pin.sym} 530 -580 0 0 {name=l75 sig_type=std_logic lab=Vbn}
 C {devices/lab_pin.sym} 600 -660 2 0 {name=l76 sig_type=std_logic lab=s0}
 C {devices/lab_pin.sym} 810 -660 1 0 {name=l78 sig_type=std_logic lab=s1}
-C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 970 -660 3 0 {name=X10}
 C {madvlsi/gnd.sym} 990 -620 0 0 {name=l79 lab=GND}
 C {madvlsi/gnd.sym} 1210 -510 0 0 {name=l80 lab=GND}
 C {devices/lab_pin.sym} 1020 -660 2 0 {name=l81 sig_type=std_logic lab=s2}
-C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 1160 -660 3 0 {name=X11}
 C {madvlsi/gnd.sym} 1180 -620 0 0 {name=l82 lab=GND}
 C {madvlsi/gnd.sym} 1400 -510 0 0 {name=l83 lab=GND}
 C {devices/lab_pin.sym} 1210 -660 2 0 {name=l84 sig_type=std_logic lab=s3}
-C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 1350 -660 3 0 {name=X12}
 C {madvlsi/gnd.sym} 1370 -620 0 0 {name=l86 lab=GND}
 C {madvlsi/gnd.sym} 1590 -510 0 0 {name=l87 lab=GND}
 C {devices/lab_pin.sym} 1400 -660 2 0 {name=l90 sig_type=std_logic lab=s4}
-C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 1540 -660 3 0 {name=X13}
 C {madvlsi/gnd.sym} 1560 -620 0 0 {name=l91 lab=GND}
 C {madvlsi/gnd.sym} 1780 -510 0 0 {name=l92 lab=GND}
 C {devices/lab_pin.sym} 1590 -660 2 0 {name=l94 sig_type=std_logic lab=s5}
 C {madvlsi/vsource.sym} 600 -540 0 0 {name=Vb0
 value=0}
-C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/mux2.sym} 1730 -660 3 0 {name=X14}
 C {madvlsi/gnd.sym} 1750 -620 0 0 {name=l95 lab=GND}
 C {devices/lab_pin.sym} 1780 -660 2 0 {name=l98 sig_type=std_logic lab=s6}
 C {madvlsi/gnd.sym} 600 -510 0 0 {name=l99 lab=GND}
@@ -4729,3 +4722,10 @@ C {madvlsi/vsource.sym} 1590 -540 0 0 {name=Vb5
 value=0}
 C {madvlsi/vsource.sym} 1780 -540 0 0 {name=Vb6
 value=0}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/mux2.sym} 550 -660 3 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/mux2.sym} 760 -660 3 0 {name=X2}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/mux2.sym} 970 -660 3 0 {name=X3}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/mux2.sym} 1160 -660 3 0 {name=X4}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/mux2.sym} 1350 -660 3 0 {name=X5}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/mux2.sym} 1540 -660 3 0 {name=X6}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/mux2.sym} 1730 -660 3 0 {name=X7}
