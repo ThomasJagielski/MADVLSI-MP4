@@ -1121,7 +1121,7 @@ C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value=".cont
       dc Vout 0 1.8 0.01
       save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
       set wr_vecnames
-      wrdata ~/Documents/MADVLSI-MP4/schematic/data/final/dac7_LDS_Vout-\{$&code\}-\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
+      wrdata ~/Documents/MADVLSI-MP4/schematic/data/vout_sweep_data/dac7_LDS_Vout-\{$&code\}-\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
       let code = code + 1
     end
     reset
