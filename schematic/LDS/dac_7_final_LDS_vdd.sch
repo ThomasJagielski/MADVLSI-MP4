@@ -1068,8 +1068,67 @@ value=".option wnflag=1
 .param MC_SWITCH=0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value=".dc Vdd 1.6 1.8 0.001
-.save all"}
+C {devices/code.sym} 5230 -1030 0 0 {name=SPICE only_toplevel=false value=".control
+  set wr_singlescale
+  let runs = 10
+  let run = 1
+  while run <= runs
+    set appendwrite = FALSE
+    let code = 0
+    while code < 128
+      if code eq 0
+        let b0 = 0
+      else
+        let b0 = (code % 2) * 1.8
+      end
+      if floor(code / 2) eq 0
+        let b1 = 0
+      else
+        let b1 = (floor(code / 2) % 2) * 1.8
+      end
+      if floor(code / 4) eq 0
+        let b2 = 0
+      else
+        let b2 = (floor(code / 4) % 2) * 1.8
+      end
+      if floor(code / 8) eq 0
+        let b3 = 0
+      else
+        let b3 = floor(code / 8) % 2 * 1.8
+      end
+      if floor(code / 16) eq 0
+        let b4 = 0
+      else 
+        let b4 = floor(code / 16) % 2 * 1.8
+      end
+      if floor(code / 32) eq 0
+        let b5 = 0
+      else
+        let b5 = floor(code / 32) % 2 * 1.8
+      end
+      if floor(code / 64) eq 0
+        let b6 = 0
+      else
+        let b6 = floor(code / 64) % 2 * 1.8
+      end
+      alter vb0 $&b0
+      alter vb1 $&b1
+      alter vb2 $&b2
+      alter vb3 $&b3
+      alter vb4 $&b4
+      alter vb5 $&b5
+      alter vb6 $&b6
+      dc Vdd 1.75 1.85 0.005
+      save v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
+      set wr_vecnames
+      wrdata ~/Documents/MADVLSI-MP4/schematic/data/vdd_sweep_data/dac7_LDS_Vdd-\{$&code\}-\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(vbias) i(viout) v(vout)
+      let code = code + 1
+    end
+    reset
+    let run = run + 1
+    destroy
+  end
+.endc"}
 C {madvlsi/vsource.sym} 5280 -800 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} 5280 -770 0 0 {name=l17 lab=GND}
