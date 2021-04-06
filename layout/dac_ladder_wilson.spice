@@ -1,0 +1,64 @@
+* SPICE3 file created from dac_ladder_wilson.ext - technology: sky130A
+
+
+* Top level circuit dac_ladder_wilson
+
+X0 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=1.408e+15p pd=8.8e+08u as=0p ps=0u w=1.6e+07u l=4e+06u
+X1 VDD Vg a_7400_n4000# GND sky130_fd_pr__nfet_01v8 ad=3.2e+14p pd=2e+08u as=2.56e+14p ps=1.6e+08u w=1.6e+07u l=4e+06u
+X2 a_2600_n4000# GND a_n5400_n4000# GND sky130_fd_pr__nfet_01v8 ad=3.2e+14p pd=2e+08u as=3.2e+14p ps=2e+08u w=1.6e+07u l=4e+06u
+X3 GND GND a_13800_n8000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=2.56e+14p ps=1.6e+08u w=1.6e+07u l=4e+06u
+X4 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X5 a_13800_n8000# b6 GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X6 a_n5400_0# Vg a_n5400_n4000# GND sky130_fd_pr__nfet_01v8 ad=2.56e+14p pd=1.6e+08u as=0p ps=0u w=1.6e+07u l=4e+06u
+X7 a_2600_n4000# Vg a_7400_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X8 GND GND a_13800_n8000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X9 a_10600_n8000# GND a_2600_n4000# GND sky130_fd_pr__nfet_01v8 ad=3.2e+14p pd=2e+08u as=0p ps=0u w=1.6e+07u l=4e+06u
+X10 a_n600_n4000# b2 GND GND sky130_fd_pr__nfet_01v8 ad=2.56e+14p pd=1.6e+08u as=0p ps=0u w=1.6e+07u l=4e+06u
+X11 a_n5400_0# Vg VDD GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X12 a_10600_n8000# Vg a_7400_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X13 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X14 a_13800_n8000# GND a_13800_0# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=6.4e+13p ps=4e+07u w=1.6e+07u l=4e+06u
+X15 a_13800_n8000# Vg a_10600_n8000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X16 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X17 VDD Vg a_n5400_0# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X18 a_n600_n4000# Vg a_2600_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X19 VDD Vg a_2600_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X20 a_n5400_0# GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X21 a_17000_0# Vg a_13800_n8000# GND sky130_fd_pr__nfet_01v8 ad=6.4e+13p pd=4e+07u as=0p ps=0u w=1.6e+07u l=4e+06u
+X22 a_n5400_n4000# GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X23 a_7400_n4000# GND VDD GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X24 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X25 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X26 a_n5400_0# b0 GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X27 a_2600_n4000# GND a_n600_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X28 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X29 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X30 GND b3 a_2600_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X31 VDD GND VDD GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X32 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X33 a_n600_n4000# Vg a_n5400_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X34 a_10600_n8000# Vg a_13800_n8000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X35 a_n5400_n4000# GND a_n5400_0# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X36 a_10600_n8000# GND VDD GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X37 a_2600_n4000# Vg a_n600_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X38 a_n5400_n4000# GND a_n5400_0# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X39 a_n600_n4000# Vg VDD GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X40 a_n5400_n4000# Vg a_n5400_0# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X41 GND GND a_10600_n8000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X42 GND b5 a_10600_n8000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X43 a_7400_n4000# Vg a_2600_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X44 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X45 VDD Vg a_n5400_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X46 a_13800_0# Vg a_10600_n8000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X47 a_2600_n4000# GND a_n600_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X48 GND b1 a_n5400_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X49 a_n5400_n4000# Vg a_n600_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X50 a_7400_n4000# Vg a_10600_n8000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X51 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X52 a_7400_n4000# b4 GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X53 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X54 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X55 a_13800_n8000# Vg a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+X56 a_10600_n8000# GND a_7400_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
+.end
+

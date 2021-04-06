@@ -1,8 +1,10 @@
-Flattening unmatched subcell low-voltage_super-wilson in circuit layout/dac7.spice (0)(1 instance)
-Flattening unmatched subcell dac_ladder in circuit layout/dac7.spice (0)(2 instances)
-Flattening unmatched subcell ibias_vg in circuit layout/dac7.spice (0)(1 instance)
+Flattening unmatched subcell low-voltage_super-wilson in circuit dac7.spice (0)(1 instance)
+Flattening unmatched subcell dac_ladder in circuit dac7.spice (0)(1 instance)
+Flattening unmatched subcell dac_ladder_wilson in circuit dac7.spice (0)(1 instance)
+Flattening unmatched subcell ibias_vg in circuit dac7.spice (0)(1 instance)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
+Class inverter:  Merged 1 devices.
 
 Subcircuit summary:
 Circuit 1: inverter                        |Circuit 2: inverter                        
@@ -10,33 +12,34 @@ Circuit 1: inverter                        |Circuit 2: inverter
 sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
 sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
 Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 4                          |Number of nets: 4                          
+Number of nets: 4 **Mismatch**             |Number of nets: 6 **Mismatch**             
 ---------------------------------------------------------------------------------------
-Circuits match uniquely.
-Property errors were found.
-Netlists match uniquely.
-There were property errors.
-sky130_fd_pr__pfet_01v81 vs. sky130_fd_pr__pfet_01v8M1:
- w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
-
-Subcircuit pins:
+NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: inverter                        |Circuit 2: inverter                        
--------------------------------------------|-------------------------------------------
-Y                                          |Y                                          
-A                                          |A                                          
-VP                                         |VP                                         
-VN                                         |VN                                         
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes inverter and inverter are equivalent.
 
+---------------------------------------------------------------------------------------
+Net: VN                                    |Net: VP                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/4 = 1            |                                           
+                                           |                                           
+Net: VP                                    |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/4 = 1            
+  sky130_fd_pr__pfet_01v8/4 = 1            |                                           
+                                           |                                           
+(no matching net)                          |Net: VN                                    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: GND                                   
+                                           |  sky130_fd_pr__nfet_01v8/4 = 1            
+---------------------------------------------------------------------------------------
+Netlists do not match.
+  Flattening non-matched subcircuits inverter inverter
 Subcircuit summary:
 Circuit 1: mux2                            |Circuit 2: mux2                            
 -------------------------------------------|-------------------------------------------
-inverter (1)                               |inverter (1)                               
-sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
-sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
-Number of devices: 5                       |Number of devices: 5                       
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
 Number of nets: 7                          |Number of nets: 7                          
 ---------------------------------------------------------------------------------------
 Circuits match uniquely.
@@ -49,323 +52,68 @@ B                                          |B
 A                                          |A                                          
 muxout                                     |Y **Mismatch**                             
 VP                                         |VDD **Mismatch**                           
+S                                          |S                                          
 VN                                         |GND **Mismatch**                           
-(no matching pin)                          |S                                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for mux2 and mux2 altered to match.
-Class layout/dac7.spice:  Merged 125 devices.
-Class LVS/LVS/dac7_final/dac_7_final_LVS.spice:  Merged 122 devices.
+Cell pin lists are equivalent.
+Device classes mux2 and mux2 are equivalent.
+Class dac7.spice:  Merged 125 devices.
+Class dac_7_final_xschem.spice:  Merged 122 devices.
 
 Subcircuit summary:
-Circuit 1: layout/dac7.spice               |Circuit 2: LVS/LVS/dac7_final/dac_7_final_ 
+Circuit 1: dac7.spice                      |Circuit 2: dac_7_final_xschem.spice        
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (24)               |sky130_fd_pr__pfet_01v8 (24)               
 sky130_fd_pr__nfet_01v8 (88)               |sky130_fd_pr__nfet_01v8 (88)               
 mux2 (7)                                   |mux2 (7)                                   
 Number of devices: 119                     |Number of devices: 119                     
-Number of nets: 59 **Mismatch**            |Number of nets: 58 **Mismatch**            
+Number of nets: 58                         |Number of nets: 58                         
 ---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 3 symmetries.
+Netlists do not match.
+There were property errors.
+ibias_vg_0/sky130_fd_pr__nfet_01v832 vs. sky130_fd_pr__nfet_01v8Mdumb1:
+ w circuit1: 32   circuit2: 16   (delta=66.7%, cutoff=1%)
+low-voltage_super-wilson_0/sky130_fd_pr__pfet_01v80 vs. sky130_fd_pr__pfet_01v8M146:
+ w circuit1: 208   circuit2: 176   (delta=16.7%, cutoff=1%)
+   Networks match locally but not globally.
+   Probably connections are swapped.
+   Check the end of logfile comp.out for implicated nodes.
 NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: layout/dac7.spice               |Circuit 2: LVS/LVS/dac7_final/dac_7_final_ 
+Circuit 1: dac7.spice                      |Circuit 2: dac_7_final_xschem.spice        
 
 ---------------------------------------------------------------------------------------
-Net: mux2_6/VP                             |Net: net15                                 
-  sky130_fd_pr__pfet_01v8/(1|3) = 17       |  sky130_fd_pr__nfet_01v8/(1|3) = 6        
-  sky130_fd_pr__pfet_01v8/2 = 7            |                                           
-  sky130_fd_pr__pfet_01v8/4 = 24           |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 24       |                                           
-  mux2/VP = 7                              |                                           
-                                           |                                           
-Net: A                                     |Net: net19                                 
-  sky130_fd_pr__nfet_01v8/2 = 7            |  sky130_fd_pr__pfet_01v8/2 = 3            
-  mux2/A = 7                               |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-                                           |                                           
-Net: /dac_ladder_0/a_7400_n4000#           |Net: net23                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 6        |  sky130_fd_pr__nfet_01v8/(1|3) = 6        
-                                           |                                           
-Net: /dac_ladder_0/a_n5400_n4000#          |Net: net26                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 6        |  sky130_fd_pr__nfet_01v8/(1|3) = 6        
-                                           |                                           
-Net: /dac_ladder_1/a_7400_n4000#           |Net: Vbn                                   
-  sky130_fd_pr__nfet_01v8/(1|3) = 6        |  sky130_fd_pr__nfet_01v8/2 = 9            
-                                           |  mux2/A = 7                               
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: /ibias_vg_0/Vbn                       |Net: VDD                                   
-  sky130_fd_pr__nfet_01v8/2 = 8            |  sky130_fd_pr__nfet_01v8/(1|3) = 22       
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/4 = 24           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 13       
-                                           |  sky130_fd_pr__pfet_01v8/2 = 7            
-                                           |  mux2/VDD = 7                             
-                                           |                                           
-(no matching net)                          |Net: Vg                                    
-                                           |  sky130_fd_pr__nfet_01v8/2 = 32           
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: /dac_ladder_1/a_10600_n8000#          |Net: net16                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 8        |  sky130_fd_pr__nfet_01v8/(1|3) = 8        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: /dac_ladder_1/a_n5400_n4000#          |Net: net27                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 7        |  sky130_fd_pr__nfet_01v8/(1|3) = 7        
-                                           |                                           
-Net: /dac_ladder_1/a_2600_n4000#           |Net: net25                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 7        |  sky130_fd_pr__nfet_01v8/(1|3) = 7        
-                                           |                                           
-Net: /dac_ladder_0/a_10600_n8000#          |Net: net14                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 7        |  sky130_fd_pr__nfet_01v8/(1|3) = 7        
-                                           |                                           
-Net: /dac_ladder_0/a_2600_n4000#           |Net: net12                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 7        |  sky130_fd_pr__nfet_01v8/(1|3) = 7        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: /dac_ladder_1/Vg                      |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/2 = 13           |                                           
-                                           |                                           
-Net: /dac_ladder_0/Vg                      |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/2 = 13           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: /dac_ladder_0/a_13800_n8000#          |Net: net28                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
-                                           |                                           
-Net: /low-voltage_super-wilson_0/a_11610_n |Net: net20                                 
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
-  sky130_fd_pr__pfet_01v8/2 = 3            |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: /low-voltage_super-wilson_0/Vout      |Net: Vout                                  
+Net: ibias_vg_0/Vg                         |Net: Vg                                    
+  sky130_fd_pr__nfet_01v8/2 = 32           |  sky130_fd_pr__nfet_01v8/2 = 32           
   sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: /dac_ladder_1/a_n600_n4000#           |Net: net24                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 5        |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
-                                           |                                           
-Net: /dac_ladder_1/a_n5400_0#              |Net: net22                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 5        |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
-                                           |                                           
-Net: /dac_ladder_1/a_13800_n8000#          |Net: net21                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 5        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/2 = 2            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |                                           
-Net: /dac_ladder_0/a_n600_n4000#           |Net: net17                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 5        |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
-                                           |                                           
-Net: /dac_ladder_0/a_n5400_0#              |Net: net13                                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 5        |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
-                                           |                                           
-Net: li_19090_1920#                        |Net: net11                                 
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
-  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: layout/dac7.spice               |Circuit 2: LVS/LVS/dac7_final/dac_7_final_ 
-
----------------------------------------------------------------------------------------
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M174      
-  (1,3) = (79,7)                           |  (1,3) = (7,4)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M172      
-  (1,3) = (79,7)                           |  (1,3) = (7,6)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M169      
-  (1,3) = (7,6)                            |  (1,3) = (7,6)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M159      
-  (1,3) = (79,7)                           |  (1,3) = (7,6)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M157      
-  (1,3) = (79,7)                           |  (1,3) = (73,7)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M104      
-  (1,3) = (7,6)                            |  (1,3) = (7,6)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M89       
-  (1,3) = (7,6)                            |  (1,3) = (73,7)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M84       
-  (1,3) = (79,5)                           |  (1,3) = (73,7)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M167      
-  (1,3) = (79,5)                           |  (1,3) = (7,5)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M102      
-  (1,3) = (79,5)                           |  (1,3) = (7,5)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M99       
-  (1,3) = (6,5)                            |  (1,3) = (7,5)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M97       
-  (1,3) = (79,5)                           |  (1,3) = (7,5)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M164      
-  (1,3) = (6,5)                            |  (1,3) = (6,5)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M162      
-  (1,3) = (7,5)                            |  (1,3) = (6,5)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M156      
-  (1,3) = (7,5)                            |  (1,3) = (73,5)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M151      
-  (1,3) = (7,5)                            |  (1,3) = (73,5)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M87       
-  (1,3) = (7,5)                            |  (1,3) = (73,5)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M50       
-  (1,3) = (5,3)                            |  (1,3) = (73,5)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M160      
-  (1,3) = (8,5)                            |  (1,3) = (5,4)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M158      
-  (1,3) = (79,6)                           |  (1,3) = (73,6)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M154      
-  (1,3) = (79,6)                           |  (1,3) = (73,6)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M91       
-  (1,3) = (79,6)                           |  (1,3) = (73,6)                           
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M109      
-  (1,3) = (5,4)                            |  (1,3) = (8,5)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
-                                           |                                           
-Instance: dac_ladder_0/sky130_fd_pr__nfet_ |Instance: sky130_fd_pr__nfet_01v8M95       
-  (1,3) = (7,4)                            |  (1,3) = (5,3)                            
-  2 = 13                                   |  2 = 36                                   
-  4 = 169                                  |  4 = 169                                  
+Net: /ibias_vg_0/net9                      |Net: net1                                  
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  sky130_fd_pr__nfet_01v8/2 = 2            
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |(no matching instance)                     
-  (1,3) = (8,6)                            |                                           
-  2 = 13                                   |                                           
-  4 = 169                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: dac_ladder_1/sky130_fd_pr__nfet_ |(no matching instance)                     
-  (1,3) = (79,8)                           |                                           
-  2 = 13                                   |                                           
-  4 = 169                                  |                                           
-                                           |                                           
+Net: /ibias_vg_0/net10                     |Net: net2                                  
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8M93       
-                                           |  (1,3) = (73,8)                           
-                                           |  2 = 36                                   
-                                           |  4 = 169                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8M107      
-                                           |  (1,3) = (8,6)                            
-                                           |  2 = 36                                   
-                                           |  4 = 169                                  
-                                           |                                           
+Net: /ibias_vg_0/net11                     |Net: net5                                  
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Instance: low-voltage_super-wilson_0/sky13 |Instance: sky130_fd_pr__pfet_01v8M1a       
-  (1,3) = (79,3)                           |  (1,3) = (4,2)                            
-  2 = 4                                    |  2 = 5                                    
-  4 = 79                                   |  4 = 73                                   
-                                           |                                           
-Instance: low-voltage_super-wilson_0/sky13 |Instance: sky130_fd_pr__pfet_01v8M141      
-  (1,3) = (79,79)                          |  (1,3) = (73,3)                           
-  2 = 4                                    |  2 = 6                                    
-  4 = 79                                   |  4 = 73                                   
-                                           |                                           
-Instance: low-voltage_super-wilson_0/sky13 |Instance: sky130_fd_pr__pfet_01v8M140      
-  (1,3) = (79,4)                           |  (1,3) = (5,4)                            
-  2 = 4                                    |  2 = 73                                   
-  4 = 79                                   |  4 = 73                                   
-                                           |                                           
-Instance: low-voltage_super-wilson_0/sky13 |(no matching instance)                     
-  (1,3) = (79,2)                           |                                           
-  2 = 5                                    |                                           
-  4 = 79                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: low-voltage_super-wilson_0/sky13 |(no matching instance)                     
-  (1,3) = (79,5)                           |                                           
-  2 = 79                                   |                                           
-  4 = 79                                   |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8M4a       
-                                           |  (1,3) = (73,4)                           
-                                           |  2 = 6                                    
-                                           |  4 = 73                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8M5a       
-                                           |  (1,3) = (6,4)                            
-                                           |  2 = 6                                    
-                                           |  4 = 73                                   
-                                           |                                           
+Net: B                                     |Net: GND                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 32       |  sky130_fd_pr__nfet_01v8/(1|3) = 32       
+  sky130_fd_pr__nfet_01v8/2 = 35           |  sky130_fd_pr__nfet_01v8/4 = 88           
+  sky130_fd_pr__nfet_01v8/4 = 88           |  sky130_fd_pr__nfet_01v8/2 = 35           
+  mux2/VN = 7                              |  mux2/GND = 7                             
+  mux2/B = 7                               |  mux2/B = 7                               
 ---------------------------------------------------------------------------------------
 Netlists do not match.
-The top level cell failed pin matching.
-The following cells had property errors: inverter
+Netlists do not match.

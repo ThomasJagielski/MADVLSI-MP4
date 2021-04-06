@@ -93,7 +93,7 @@ spiceprefix=X
 C {devices/opin.sym} 260 40 0 0 {name=p1 lab=Y}
 C {devices/ipin.sym} 50 150 0 0 {name=p3 lab=B}
 C {devices/ipin.sym} 50 -70 0 0 {name=p5 lab=A}
-C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/inverter.sym} -10 40 0 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI-MP4/schematic/LDS/inverter.sym} -10 40 0 0 {name=X1}
 C {devices/ipin.sym} -90 40 0 0 {name=p4 lab=S}
-C {devices/vdd.sym} -10 0 0 0 {name=l1 lab=VDD}
-C {devices/gnd.sym} -10 80 0 0 {name=l2 lab=GND}
+C {madvlsi/vdd.sym} -10 0 0 0 {name=l1 lab=VDD}
+C {madvlsi/gnd.sym} -10 80 0 0 {name=l2 lab=GND}
