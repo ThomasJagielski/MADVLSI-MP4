@@ -155,7 +155,7 @@ X55 a_13800_n8000# Vg a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p p
 X56 a_10600_n8000# GND a_7400_n4000# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.6e+07u l=4e+06u
 .ends
 
-.subckt ibias_vg GND VDD Vg Vbn Vr
+.subckt ibias_vg GND VDD net10 Vg net13 Vbn a_24800_n14630# net9 Vr
 X0 a_15200_n14630# Vbn Vbp GND sky130_fd_pr__nfet_01v8 ad=1.28e+14p pd=8e+07u as=1.28e+14p ps=8e+07u w=1.6e+07u l=4e+06u
 X1 Vr a_1600_n14660# a_1600_n14660# GND sky130_fd_pr__nfet_01v8 ad=3.84e+14p pd=2.4e+08u as=2.56e+14p ps=1.6e+08u w=1.6e+07u l=4e+06u
 X2 net10 Vg VDD GND sky130_fd_pr__nfet_01v8 ad=1.28e+14p pd=8e+07u as=8.1987e+14p ps=6.061e+08u w=1.6e+07u l=4e+06u
@@ -265,19 +265,19 @@ X103 Vdp VDD a_1600_n14660# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u 
 
 * Top level circuit dac7
 
-Xlow-voltage_super-wilson_0 B low-voltage_super-wilson_0/Iin li_19090_1920# a_14250_1790#
+Xlow-voltage_super-wilson_0 GND low-voltage_super-wilson_0/Iin li_19090_1920# a_14250_1790#
 + Vout VP li_12650_1440# low-voltage_super-wilson
-Xdac_ladder_0 B low-voltage_super-wilson_0/Iin VP ibias_vg_0/Vg mux2_0/muxout mux2_1/muxout
+Xdac_ladder_0 GND low-voltage_super-wilson_0/Iin VP Vg mux2_0/muxout mux2_1/muxout
 + mux2_2/muxout mux2_3/muxout mux2_4/muxout mux2_5/muxout mux2_6/muxout dac_ladder
-Xmux2_0 B VP s0 A mux2_0/muxout B mux2
-Xmux2_1 B VP s1 A mux2_1/muxout B mux2
-Xmux2_2 B VP s2 A mux2_2/muxout B mux2
-Xdac_ladder_wilson_0 B li_19090_1920# VP ibias_vg_0/Vg A B B B B B B li_12650_1440#
+Xmux2_0 GND VP s0 A mux2_0/muxout GND mux2
+Xmux2_1 GND VP s1 A mux2_1/muxout GND mux2
+Xmux2_2 GND VP s2 A mux2_2/muxout GND mux2
+Xdac_ladder_wilson_0 GND li_19090_1920# VP Vg A GND GND GND GND GND GND li_12650_1440#
 + dac_ladder_wilson
-Xmux2_3 B VP s3 A mux2_3/muxout B mux2
-Xmux2_5 B VP s5 A mux2_5/muxout B mux2
-Xmux2_4 B VP s4 A mux2_4/muxout B mux2
-Xmux2_6 B VP s6 A mux2_6/muxout B mux2
-Xibias_vg_0 B VP ibias_vg_0/Vg A Vr ibias_vg
+Xmux2_3 GND VP s3 A mux2_3/muxout GND mux2
+Xmux2_4 GND VP s4 A mux2_4/muxout GND mux2
+Xmux2_5 GND VP s5 A mux2_5/muxout GND mux2
+Xmux2_6 GND VP s6 A mux2_6/muxout GND mux2
+Xibias_vg_0 GND VP net2 Vg net3 A net10 net1 Vr ibias_vg
 .end
 

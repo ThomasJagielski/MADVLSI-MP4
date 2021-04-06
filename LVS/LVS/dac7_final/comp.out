@@ -71,49 +71,15 @@ Number of nets: 58                         |Number of nets: 58
 ---------------------------------------------------------------------------------------
 Resolving automorphisms by property value.
 Resolving automorphisms by pin name.
-Netlists match with 3 symmetries.
-Netlists do not match.
+Netlists match uniquely.
+Circuits match correctly.
 There were property errors.
 ibias_vg_0/sky130_fd_pr__nfet_01v832 vs. sky130_fd_pr__nfet_01v8Mdumb1:
  w circuit1: 32   circuit2: 16   (delta=66.7%, cutoff=1%)
 low-voltage_super-wilson_0/sky130_fd_pr__pfet_01v80 vs. sky130_fd_pr__pfet_01v8M146:
  w circuit1: 208   circuit2: 176   (delta=16.7%, cutoff=1%)
-   Networks match locally but not globally.
-   Probably connections are swapped.
-   Check the end of logfile comp.out for implicated nodes.
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: dac7.spice                      |Circuit 2: dac_7_final_xschem.spice        
-
----------------------------------------------------------------------------------------
-Net: ibias_vg_0/Vg                         |Net: Vg                                    
-  sky130_fd_pr__nfet_01v8/2 = 32           |  sky130_fd_pr__nfet_01v8/2 = 32           
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: /ibias_vg_0/net9                      |Net: net1                                  
-  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  sky130_fd_pr__nfet_01v8/2 = 2            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: /ibias_vg_0/net10                     |Net: net2                                  
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: /ibias_vg_0/net11                     |Net: net5                                  
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: B                                     |Net: GND                                   
-  sky130_fd_pr__nfet_01v8/(1|3) = 32       |  sky130_fd_pr__nfet_01v8/(1|3) = 32       
-  sky130_fd_pr__nfet_01v8/2 = 35           |  sky130_fd_pr__nfet_01v8/4 = 88           
-  sky130_fd_pr__nfet_01v8/4 = 88           |  sky130_fd_pr__nfet_01v8/2 = 35           
-  mux2/VN = 7                              |  mux2/GND = 7                             
-  mux2/B = 7                               |  mux2/B = 7                               
----------------------------------------------------------------------------------------
-Netlists do not match.
-Netlists do not match.
+Cells have no pins;  pin matching not needed.
+Device classes dac7.spice and dac_7_final_xschem.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: dac7.spice

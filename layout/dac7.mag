@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1617729173
+timestamp 1617734396
 << nwell >>
 rect 7125 1060 7515 1120
 << nmos >>
@@ -149,6 +149,8 @@ rect 9140 -6580 9520 -6560
 << locali >>
 rect 11515 2930 14320 2960
 rect -19520 1330 -16540 1425
+rect -22475 -455 -22200 -355
+rect -31270 -2790 -30890 -2395
 rect -19520 -2660 -19355 1330
 rect -16610 1190 -16540 1330
 rect -2775 1230 -2125 1270
@@ -179,6 +181,7 @@ rect 520 -850 560 -840
 rect 9535 -930 9925 720
 rect 11135 -745 11525 960
 rect -19825 -2760 -19355 -2660
+rect -22475 -2975 -22110 -2875
 rect -13380 -4540 -13360 -4535
 rect -15625 -4790 -15250 -4770
 rect -44475 -5070 -44405 -4970
@@ -326,6 +329,7 @@ rect -11580 1310 -11575 1380
 rect -11975 1305 -11575 1310
 rect -2935 1300 14320 2895
 rect -2070 -295 14320 1300
+rect -22880 -5105 -22485 -4855
 rect -15285 -4945 -7670 -4830
 rect -15285 -5015 -11970 -4945
 rect -11580 -5015 -7670 -4945
@@ -383,69 +387,56 @@ use ibias_vg  ibias_vg_0
 timestamp 1617552423
 transform 1 0 -43680 0 1 300
 box -820 -8300 24030 2600
-use mux2  mux2_0
+use mux2  mux2_6
 timestamp 1616853209
-transform 1 0 -15285 0 1 -5275
-box 0 -60 415 505
-use mux2  mux2_1
-timestamp 1616853209
-transform 1 0 -13685 0 1 -5275
-box 0 -60 415 505
-use mux2  mux2_2
-timestamp 1616853209
-transform 1 0 -12885 0 1 -5275
-box 0 -60 415 505
-use mux2  mux2_3
-timestamp 1616853209
-transform 1 0 -11285 0 1 -5275
-box 0 -60 415 505
-use mux2  mux2_4
-timestamp 1616853209
-transform 1 0 -10485 0 1 -5275
+transform 1 0 -8085 0 1 -5275
 box 0 -60 415 505
 use mux2  mux2_5
 timestamp 1616853209
 transform 1 0 -8885 0 1 -5275
 box 0 -60 415 505
-use mux2  mux2_6
+use mux2  mux2_4
 timestamp 1616853209
-transform 1 0 -8085 0 1 -5275
+transform 1 0 -10485 0 1 -5275
+box 0 -60 415 505
+use mux2  mux2_3
+timestamp 1616853209
+transform 1 0 -11285 0 1 -5275
+box 0 -60 415 505
+use mux2  mux2_2
+timestamp 1616853209
+transform 1 0 -12885 0 1 -5275
+box 0 -60 415 505
+use mux2  mux2_1
+timestamp 1616853209
+transform 1 0 -13685 0 1 -5275
+box 0 -60 415 505
+use mux2  mux2_0
+timestamp 1616853209
+transform 1 0 -15285 0 1 -5275
 box 0 -60 415 505
 use low-voltage_super-wilson  low-voltage_super-wilson_0
 timestamp 1617552636
 transform 1 0 -1485 0 1 1175
 box -615 -275 15825 1785
-use dac_ladder  dac_ladder_0
-timestamp 1617561611
-transform 1 0 -14475 0 1 -510
-box -4700 -4135 11700 3405
 use dac_ladder_wilson  dac_ladder_wilson_0
 timestamp 1617721049
 transform 1 0 2630 0 1 -2525
 box -4700 -4135 11700 3405
+use dac_ladder  dac_ladder_0
+timestamp 1617561611
+transform 1 0 -14475 0 1 -510
+box -4700 -4135 11700 3405
 << labels >>
-rlabel poly 3785 -6590 3785 -6590 5 b0
-rlabel poly 4585 -6590 4585 -6590 5 b0
-rlabel poly 6185 -6590 6185 -6590 5 b0
-rlabel poly 6985 -6590 6985 -6590 5 b0
-rlabel poly 8585 -6590 8585 -6590 5 b0
-rlabel poly 9385 -6590 9385 -6590 5 b0
-rlabel metal1 -13685 -5325 -13685 -5325 7 B
 rlabel locali -13685 -5285 -13685 -5285 7 A
 rlabel locali -12885 -5285 -12885 -5285 7 A
-rlabel metal1 -12885 -5325 -12885 -5325 7 B
-rlabel metal1 -11285 -5325 -11285 -5325 7 B
 rlabel locali -11285 -5285 -11285 -5285 7 A
-rlabel metal1 -10485 -5325 -10485 -5325 7 B
 rlabel locali -10485 -5285 -10485 -5285 7 A
-rlabel metal1 -8885 -5325 -8885 -5325 7 B
 rlabel locali -8885 -5285 -8885 -5285 7 A
 rlabel locali -8085 -5285 -8085 -5285 7 A
-rlabel metal1 -8085 -5325 -8085 -5325 7 B
 rlabel locali 14320 2945 14320 2945 3 Vout
 rlabel locali -44475 -5025 -44475 -5025 7 Vr
 rlabel metal1 -44480 2490 -44480 2490 7 VP
-rlabel metal1 -44485 -7660 -44485 -7660 7 VN
 rlabel locali -15625 -8120 -15625 -8120 5 s0
 rlabel locali -14125 -8120 -14125 -8120 5 s1
 rlabel locali -13125 -8120 -13125 -8120 5 s2
@@ -453,4 +444,11 @@ rlabel locali -11470 -8120 -11470 -8120 5 s3
 rlabel locali -10625 -8120 -10625 -8120 5 s4
 rlabel locali -9125 -8120 -9125 -8120 5 s5
 rlabel locali -8375 -8120 -8375 -8120 5 s6
+rlabel metal1 -18345 -8000 -18345 -8000 5 GND
+rlabel locali -19435 1425 -19435 1425 1 Vg
+rlabel metal1 -19425 2895 -19425 2895 1 VDD
+rlabel locali -30890 -2590 -30890 -2590 3 net10
+rlabel metal1 -22485 -4985 -22485 -4985 3 net1
+rlabel locali -22325 -355 -22325 -355 1 net2
+rlabel locali -22300 -2875 -22300 -2875 1 net3
 << end >>
