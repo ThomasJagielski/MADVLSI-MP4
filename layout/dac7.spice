@@ -275,8 +275,8 @@ Xmux2_2 B VP s2 A mux2_2/muxout B mux2
 Xdac_ladder_wilson_0 B li_19090_1920# VP ibias_vg_0/Vg A B B B B B B li_12650_1440#
 + dac_ladder_wilson
 Xmux2_3 B VP s3 A mux2_3/muxout B mux2
-Xmux2_4 B VP s4 A mux2_4/muxout B mux2
 Xmux2_5 B VP s5 A mux2_5/muxout B mux2
+Xmux2_4 B VP s4 A mux2_4/muxout B mux2
 Xmux2_6 B VP s6 A mux2_6/muxout B mux2
 Xibias_vg_0 B VP ibias_vg_0/Vg A Vr ibias_vg
 .end

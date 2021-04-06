@@ -20,56 +20,56 @@ node "a_320_380#" 1985 675.72 320 380 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "a_270_980#" 1189 356.43 270 980 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22200 1540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_270_460#" 1983 806.4 270 460 nw 0 0 0 0 268800 2080 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "A" "B" 557
-cap "m1_410_40#" "m1_410_510#" 210
-cap "m1_410_510#" "muxout" 237.56
-cap "m1_410_40#" "a_240_250#" 53.8
-cap "VN" "VP" 20
-cap "m1_410_40#" "muxout" 238.87
-cap "m1_410_510#" "w_270_460#" 38.805
-cap "B" "m1_410_510#" 228.38
-cap "m1_410_40#" "B" 250.67
-cap "A" "a_320_380#" 101.367
-cap "w_270_460#" "muxout" 10.36
-cap "B" "muxout" 464.933
-cap "m1_410_510#" "a_270_980#" 22.4625
-cap "B" "w_270_460#" 8.51
-cap "a_270_980#" "muxout" 34.445
-cap "m1_410_510#" "VP" 46.2162
-cap "a_320_380#" "m1_410_510#" 57.525
-cap "m1_410_40#" "a_320_380#" 59.225
-cap "a_320_380#" "a_240_250#" 61.3333
-cap "a_320_380#" "muxout" 43.9494
-cap "A" "m1_410_510#" 228.38
-cap "m1_410_40#" "VN" 46.2162
-cap "m1_410_40#" "A" 250.67
-cap "B" "a_320_380#" 8.8
-cap "A" "a_240_250#" 28.42
+cap "w_270_460#" "B" 8.51
+cap "m1_410_510#" "m1_410_40#" 210
 cap "A" "muxout" 413.6
-cap "A" "w_270_460#" 8.51
-cap "a_320_380#" "a_270_980#" 28.75
+cap "a_320_380#" "B" 8.8
+cap "w_270_460#" "m1_410_510#" 38.805
+cap "A" "m1_410_40#" 250.67
+cap "m1_410_40#" "a_240_250#" 53.8
+cap "a_320_380#" "m1_410_510#" 57.525
+cap "a_270_980#" "m1_410_510#" 22.4625
+cap "w_270_460#" "A" 8.51
+cap "VN" "m1_410_40#" 46.2162
+cap "A" "a_320_380#" 101.367
+cap "a_320_380#" "a_240_250#" 61.3333
+cap "VP" "m1_410_510#" 46.2162
+cap "m1_410_40#" "muxout" 238.87
+cap "B" "m1_410_510#" 228.38
+cap "w_270_460#" "muxout" 10.36
+cap "a_320_380#" "muxout" 43.9494
+cap "a_270_980#" "muxout" 34.445
+cap "A" "B" 557
+cap "VP" "VN" 20
+cap "a_320_380#" "m1_410_40#" 59.225
+cap "A" "m1_410_510#" 228.38
+cap "a_270_980#" "a_320_380#" 28.75
+cap "B" "muxout" 464.933
+cap "A" "a_240_250#" 28.42
+cap "B" "m1_410_40#" 250.67
+cap "m1_410_510#" "muxout" 237.56
 device msubckt sky130_fd_pr__nfet_01v8 660 30 661 31 l=30 w=200 "VSUBS" "a_320_380#" 60 0 "muxout" 200 0 "B" 200 0
 device msubckt sky130_fd_pr__nfet_01v8 530 30 531 31 l=30 w=200 "VSUBS" "a_240_250#" 60 0 "A" 200 0 "muxout" 200 0
 device msubckt sky130_fd_pr__pfet_01v8 660 690 661 691 l=30 w=200 "w_270_460#" "a_270_980#" 60 0 "muxout" 200 0 "B" 200 0
 device msubckt sky130_fd_pr__pfet_01v8 530 690 531 691 l=30 w=200 "w_270_460#" "a_320_380#" 60 0 "A" 200 0 "muxout" 200 0
 subcap "A" -8.25
-cap "inverter_0/VN" "muxout" 17.4706
 cap "B" "inverter_0/VP" 3.37508e-14
-cap "B" "inverter_0/Y" 95.7647
-cap "B" "inverter_0/VN" 49.5
-cap "inverter_0/A" "inverter_0/VP" 7.10543e-15
-cap "inverter_0/Y" "inverter_0/A" 115.518
-cap "inverter_0/A" "inverter_0/VN" 17.575
-cap "inverter_0/A" "A" 11.55
-cap "inverter_0/A" "muxout" 7.76471
-cap "inverter_0/Y" "inverter_0/VP" -4.9738e-14
-cap "inverter_0/VP" "inverter_0/VN" -20
-cap "A" "inverter_0/VP" 58.1429
-cap "inverter_0/Y" "inverter_0/VN" 55.76
-cap "inverter_0/Y" "A" 376.026
-cap "A" "inverter_0/VN" 176.786
-cap "inverter_0/VP" "muxout" 36.7802
 cap "inverter_0/Y" "muxout" 137.909
+cap "inverter_0/VN" "A" 176.786
+cap "inverter_0/VP" "inverter_0/Y" -4.9738e-14
+cap "inverter_0/VN" "muxout" 17.4706
+cap "inverter_0/VP" "A" 58.1429
+cap "inverter_0/A" "inverter_0/Y" 115.518
+cap "B" "inverter_0/Y" 95.7647
+cap "inverter_0/VN" "inverter_0/VP" -20
+cap "inverter_0/VP" "muxout" 36.7802
+cap "inverter_0/A" "A" 11.55
+cap "inverter_0/VN" "inverter_0/A" 17.575
+cap "B" "inverter_0/VN" 49.5
+cap "inverter_0/Y" "A" 376.026
+cap "inverter_0/A" "muxout" 7.76471
+cap "inverter_0/VN" "inverter_0/Y" 55.76
+cap "inverter_0/VP" "inverter_0/A" 7.10543e-15
 merge "inverter_0/VN" "VN" -359.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15200 -1600 0 0 0 0 0 0 0 0 0 0
 merge "VN" "m1_410_40#"
 merge "m1_410_40#" "VSUBS"

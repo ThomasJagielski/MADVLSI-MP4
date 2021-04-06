@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1617724767
+timestamp 1617729173
 << nwell >>
 rect 7125 1060 7515 1120
 << nmos >>
@@ -163,8 +163,8 @@ rect 7125 1085 7135 1105
 rect 7505 1085 7515 1105
 rect 7125 1075 7515 1085
 rect -2165 1020 -2100 1040
-rect 9545 1000 9915 1175
-rect 9545 960 11525 1000
+rect 9545 1010 9915 1175
+rect 9545 960 11525 1010
 rect 6325 850 6715 940
 rect 7125 925 7515 935
 rect 7125 905 7135 925
@@ -383,45 +383,45 @@ use ibias_vg  ibias_vg_0
 timestamp 1617552423
 transform 1 0 -43680 0 1 300
 box -820 -8300 24030 2600
-use mux2  mux2_6
+use mux2  mux2_0
 timestamp 1616853209
-transform 1 0 -8085 0 1 -5275
-box 0 -60 415 505
-use mux2  mux2_5
-timestamp 1616853209
-transform 1 0 -8885 0 1 -5275
-box 0 -60 415 505
-use mux2  mux2_4
-timestamp 1616853209
-transform 1 0 -10485 0 1 -5275
-box 0 -60 415 505
-use mux2  mux2_3
-timestamp 1616853209
-transform 1 0 -11285 0 1 -5275
-box 0 -60 415 505
-use mux2  mux2_2
-timestamp 1616853209
-transform 1 0 -12885 0 1 -5275
+transform 1 0 -15285 0 1 -5275
 box 0 -60 415 505
 use mux2  mux2_1
 timestamp 1616853209
 transform 1 0 -13685 0 1 -5275
 box 0 -60 415 505
-use mux2  mux2_0
+use mux2  mux2_2
 timestamp 1616853209
-transform 1 0 -15285 0 1 -5275
+transform 1 0 -12885 0 1 -5275
+box 0 -60 415 505
+use mux2  mux2_3
+timestamp 1616853209
+transform 1 0 -11285 0 1 -5275
+box 0 -60 415 505
+use mux2  mux2_4
+timestamp 1616853209
+transform 1 0 -10485 0 1 -5275
+box 0 -60 415 505
+use mux2  mux2_5
+timestamp 1616853209
+transform 1 0 -8885 0 1 -5275
+box 0 -60 415 505
+use mux2  mux2_6
+timestamp 1616853209
+transform 1 0 -8085 0 1 -5275
 box 0 -60 415 505
 use low-voltage_super-wilson  low-voltage_super-wilson_0
 timestamp 1617552636
 transform 1 0 -1485 0 1 1175
 box -615 -275 15825 1785
-use dac_ladder_wilson  dac_ladder_wilson_0
-timestamp 1617721049
-transform 1 0 2630 0 1 -2525
-box -4700 -4135 11700 3405
 use dac_ladder  dac_ladder_0
 timestamp 1617561611
 transform 1 0 -14475 0 1 -510
+box -4700 -4135 11700 3405
+use dac_ladder_wilson  dac_ladder_wilson_0
+timestamp 1617721049
+transform 1 0 2630 0 1 -2525
 box -4700 -4135 11700 3405
 << labels >>
 rlabel poly 3785 -6590 3785 -6590 5 b0

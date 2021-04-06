@@ -1,22 +1,22 @@
-timestamp 1617724767
+timestamp 1617729173
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
 use ibias_vg ibias_vg_0 1 0 -87360 0 1 600
-use mux2 mux2_6 1 0 -16170 0 1 -10550
-use mux2 mux2_5 1 0 -17770 0 1 -10550
-use mux2 mux2_4 1 0 -20970 0 1 -10550
-use mux2 mux2_3 1 0 -22570 0 1 -10550
-use mux2 mux2_2 1 0 -25770 0 1 -10550
-use mux2 mux2_1 1 0 -27370 0 1 -10550
 use mux2 mux2_0 1 0 -30570 0 1 -10550
+use mux2 mux2_1 1 0 -27370 0 1 -10550
+use mux2 mux2_2 1 0 -25770 0 1 -10550
+use mux2 mux2_3 1 0 -22570 0 1 -10550
+use mux2 mux2_4 1 0 -20970 0 1 -10550
+use mux2 mux2_5 1 0 -17770 0 1 -10550
+use mux2 mux2_6 1 0 -16170 0 1 -10550
 use low-voltage_super-wilson low-voltage_super-wilson_0 1 0 -2970 0 1 2350
-use dac_ladder_wilson dac_ladder_wilson_0 1 0 5260 0 1 -5050
 use dac_ladder dac_ladder_0 1 0 -28950 0 1 -1020
+use dac_ladder_wilson dac_ladder_wilson_0 1 0 5260 0 1 -5050
 node "VN" 0 1805.24 -88970 -16000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1301300 4680 0 0 0 0 0 0 0 0 0 0
-node "m1_n5870_2600#" 0 151698 -5870 2600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 214655100 81780 0 0 0 0 0 0 0 0 0 0
+node "m1_n5870_2600#" 0 151656 -5870 2600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 214655100 81780 0 0 0 0 0 0 0 0 0 0
 node "m1_n30570_n10040#" 8 19958.7 -30570 -10040 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5915400 33140 10248000 27220 0 0 0 0 0 0 0 0
 node "m1_n39640_3880#" 0 3574.13 -39640 3880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3227900 7200 0 0 0 0 0 0 0 0 0 0
 node "VP" 0 1469.84 -88960 4110 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 873600 4400 0 0 0 0 0 0 0 0 0 0
@@ -35,7 +35,7 @@ node "li_n30000_n9670#" 79 368.48 -30000 -9670 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "Vr" 17 212.9 -88950 -10140 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28000 680 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_n26800_n9670#" 93 418.03 -26800 -9670 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47600 1360 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_12650_1440#" 293 10259.4 12650 1440 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4586400 21880 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_19090_1920#" 204 7282.93 19090 1920 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3235600 15600 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_19090_1920#" 200 7342.5 19090 1920 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3300000 15600 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_n5550_2460#" 274 1146.63 -5550 2460 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 139600 3700 0 0 0 0 0 0 0 0 0 0 0 0
 node "Vout" 1141 3429.85 23030 5860 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336600 11340 0 0 0 0 0 0 0 0 0 0 0 0
 node "s6" 2201 4749.5 -16790 -11410 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27500 1560 0 0 472400 13960 0 0 0 0 0 0 0 0 0 0 0 0
@@ -62,43 +62,43 @@ node "a_14250_1790#" 245 2255.56 14250 1790 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "a_n33550_2290#" 931 12855.4 -33550 2290 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 129600 1940 0 0 4001400 30560 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_14250_2120#" 11050 280.8 14250 2120 nw 0 0 0 0 93600 1800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "li_n25200_n9670#" "m1_n30570_n10040#" 43.38
-cap "B" "A" 47886.5
-cap "B" "m1_n30570_n10040#" 1830.67
-cap "li_n17200_n9670#" "m1_n30570_n10040#" 43.38
-cap "s4" "A" 252.871
-cap "B" "s5" 2847.38
-cap "s4" "m1_n30570_n10040#" 199.92
-cap "m1_n5870_2600#" "a_14250_1790#" 1745.27
-cap "s1" "A" 116.157
-cap "m1_n30570_n10040#" "li_n30000_n9670#" 43.38
-cap "m1_n30570_n10040#" "s1" 199.92
-cap "li_n26800_n9670#" "m1_n30570_n10040#" 43.38
-cap "s6" "A" 142.022
-cap "s6" "m1_n30570_n10040#" 199.92
-cap "s3" "A" 175.97
-cap "a_14250_1790#" "w_14250_2120#" 7.215
-cap "li_n22000_n9670#" "m1_n30570_n10040#" 43.38
-cap "m1_n5870_2600#" "li_12650_1440#" 13726.1
-cap "s0" "A" 116.157
-cap "s3" "m1_n30570_n10040#" 199.92
-cap "s2" "A" 151.602
-cap "s2" "m1_n30570_n10040#" 199.92
-cap "a_14250_1790#" "li_12650_1440#" 286
-cap "m1_n5870_2600#" "li_19090_1920#" 9729.36
-cap "B" "s4" 2847.38
-cap "li_n5550_2460#" "a_660_n1740#" 609.086
-cap "B" "s1" 2847.38
-cap "B" "s6" 2865.15
-cap "s6" "li_n17200_n9670#" 11.5946
-cap "s5" "A" 151.602
-cap "m1_n30570_n10040#" "s5" 199.92
-cap "B" "s3" 2847.38
+cap "s4" "B" 2847.38
+cap "m1_n30570_n10040#" "s3" 199.92
+cap "a_14250_1790#" "m1_n5870_2600#" 1745.27
+cap "A" "s1" 116.157
 cap "m1_n30570_n10040#" "li_n15600_n9670#" 43.38
+cap "li_n22000_n9670#" "m1_n30570_n10040#" 43.38
+cap "li_n26800_n9670#" "m1_n30570_n10040#" 43.38
+cap "s1" "B" 2847.38
+cap "A" "B" 47886.5
 cap "li_19090_1920#" "li_12650_1440#" 114
-cap "B" "s0" 2847.38
+cap "A" "s0" 116.157
+cap "li_n25200_n9670#" "m1_n30570_n10040#" 43.38
+cap "s0" "B" 2847.38
+cap "A" "s3" 175.97
+cap "a_14250_1790#" "w_14250_2120#" 7.215
+cap "m1_n30570_n10040#" "s5" 199.92
+cap "li_n5550_2460#" "a_660_n1740#" 609.086
+cap "B" "s3" 2847.38
+cap "s6" "m1_n30570_n10040#" 199.92
+cap "s2" "m1_n30570_n10040#" 199.92
+cap "s4" "m1_n30570_n10040#" 199.92
+cap "li_19090_1920#" "m1_n5870_2600#" 9912.9
+cap "a_14250_1790#" "li_12650_1440#" 286
 cap "li_n20400_n9670#" "m1_n30570_n10040#" 43.38
-cap "B" "s2" 2860.22
+cap "m1_n30570_n10040#" "s1" 199.92
+cap "A" "s5" 151.602
+cap "li_n30000_n9670#" "m1_n30570_n10040#" 43.38
+cap "m1_n30570_n10040#" "B" 1830.67
+cap "m1_n5870_2600#" "li_12650_1440#" 13726.1
+cap "A" "s6" 142.022
+cap "s5" "B" 2847.38
+cap "A" "s2" 151.602
+cap "li_n17200_n9670#" "m1_n30570_n10040#" 43.38
+cap "s6" "B" 2865.15
+cap "s2" "B" 2860.22
+cap "A" "s4" 252.871
+cap "li_n17200_n9670#" "s6" 11.5946
 subcap "VN" -72.396
 subcap "A" -40185.5
 subcap "A" -40094.3
@@ -108,431 +108,431 @@ cap "ibias_vg_0/GND" "ibias_vg_0/Vbn" -351.6
 cap "A" "dac_ladder_wilson_0/GND" 40.2188
 cap "dac_ladder_wilson_0/GND" "A" 40.2188
 cap "dac_ladder_wilson_0/GND" "A" 41.2803
-cap "A" "dac_ladder_wilson_0/GND" 29.9062
-cap "dac_ladder_wilson_0/GND" "A" 12.8906
-cap "dac_ladder_wilson_0/GND" "A" 4.71429
-cap "dac_ladder_wilson_0/b0" "B" -140
-cap "dac_ladder_wilson_0/GND" "A" 40.2188
-cap "dac_ladder_wilson_0/GND" "A" 40.2188
-cap "dac_ladder_wilson_0/GND" "A" 41.2803
 cap "dac_ladder_wilson_0/GND" "A" 29.9062
-cap "dac_ladder_wilson_0/GND" "A" 17.6049
+cap "A" "dac_ladder_wilson_0/GND" 4.71429
+cap "A" "dac_ladder_wilson_0/GND" 12.8906
+cap "B" "dac_ladder_wilson_0/b0" -140
+cap "dac_ladder_wilson_0/GND" "A" 40.2188
+cap "A" "dac_ladder_wilson_0/GND" 40.2188
+cap "A" "dac_ladder_wilson_0/GND" 41.2803
+cap "A" "dac_ladder_wilson_0/GND" 29.9062
+cap "A" "dac_ladder_wilson_0/GND" 17.6049
 cap "dac_ladder_wilson_0/GND" "dac_ladder_wilson_0/a_n5400_0#" -5.04
-cap "dac_ladder_wilson_0/GND" "dac_ladder_wilson_0/b0" -43.9
+cap "dac_ladder_wilson_0/b0" "dac_ladder_wilson_0/GND" -43.9
 cap "dac_ladder_wilson_0/a_n5400_n4000#" "dac_ladder_wilson_0/GND" 12.3
 cap "dac_ladder_wilson_0/a_n5400_0#" "dac_ladder_wilson_0/GND" -19.31
-cap "dac_ladder_wilson_0/b1" "dac_ladder_wilson_0/a_n5400_n4000#" -24.35
-cap "dac_ladder_wilson_0/b2" "dac_ladder_wilson_0/a_n600_n4000#" -24.35
+cap "dac_ladder_wilson_0/a_n5400_n4000#" "dac_ladder_wilson_0/b1" -24.35
+cap "dac_ladder_wilson_0/a_n600_n4000#" "dac_ladder_wilson_0/b2" -24.35
 cap "dac_ladder_wilson_0/a_2600_n4000#" "dac_ladder_wilson_0/b3" -21.19
 cap "dac_ladder_wilson_0/b3" "dac_ladder_wilson_0/a_2600_n4000#" -3.16
 cap "dac_ladder_wilson_0/b4" "dac_ladder_wilson_0/a_7400_n4000#" -9.74
-cap "dac_ladder_wilson_0/a_7400_n4000#" "dac_ladder_wilson_0/b4" -14.61
 cap "dac_ladder_wilson_0/a_10600_n8000#" "dac_ladder_wilson_0/b4" -7.09
+cap "dac_ladder_wilson_0/a_7400_n4000#" "dac_ladder_wilson_0/b4" -14.61
 cap "dac_ladder_wilson_0/a_10600_n8000#" "dac_ladder_wilson_0/b5" -17.26
 cap "dac_ladder_wilson_0/GND" "dac_ladder_wilson_0/b6" 4.25
 cap "dac_ladder_wilson_0/a_13800_n8000#" "dac_ladder_wilson_0/b6" -22.3
 subcap "B" -264581
-cap "mux2_0/A" "mux2_0/B" 47.6371
+cap "mux2_0/B" "mux2_0/A" 47.6371
 subcap "B" -264512
-cap "mux2_0/A" "A" 4.65385
 cap "mux2_0/B" "A" 39.3871
+cap "mux2_0/A" "A" 4.65385
 cap "mux2_1/B" "mux2_1/A" 4.125
-cap "mux2_2/A" "mux2_2/VN" 82.8992
-cap "mux2_2/VN" "s2" 2.60526
-cap "mux2_2/B" "mux2_2/A" 87.0242
-cap "s3" "mux2_3/B" 3
-cap "mux2_3/A" "mux2_3/B" 87.0242
-cap "mux2_4/A" "mux2_4/B" 68.9274
-cap "mux2_4/B" "s4" 4.125
-cap "A" "mux2_4/inverter_0/VN" 18.0968
-cap "mux2_5/B" "mux2_5/VN" 74.035
-cap "mux2_5/B" "mux2_5/A" 26.3468
-cap "mux2_6/A" "mux2_6/B" 4.125
-cap "s6" "mux2_6/VN" 3.53571
-cap "mux2_6/VN" "mux2_6/A" 62.3843
+cap "mux2_1/A" "mux2_1/B" 82.8992
+cap "s2" "mux2_1/B" 2.60526
+cap "mux2_2/A" "mux2_2/B" 87.0242
+cap "mux2_3/B" "mux2_3/A" 87.0242
+cap "mux2_3/B" "s3" 3
+cap "mux2_3/inverter_0/VN" "mux2_4/A" 68.9274
+cap "s4" "mux2_3/inverter_0/VN" 4.125
+cap "mux2_4/inverter_0/VN" "A" 18.0968
+cap "mux2_5/VN" "mux2_5/B" 74.035
+cap "mux2_5/A" "mux2_5/B" 26.3468
+cap "mux2_6/B" "mux2_5/A" 4.125
+cap "mux2_5/B" "mux2_5/A" 62.3843
+cap "s6" "mux2_5/B" 3.53571
 cap "mux2_6/A" "mux2_6/B" 82.8992
 subcap "m1_n30570_n10040#" -19348
 subcap "li_n30000_n9670#" -915.437
 subcap "B" -266652
-cap "mux2_0/A" "mux2_0/B" 73.3359
-cap "mux2_0/B" "mux2_0/inverter_0/Y" -5.85
-cap "mux2_0/inverter_0/Y" "mux2_0/muxout" 3.79681
-cap "mux2_0/VP" "mux2_0/B" -104.062
+cap "mux2_0/muxout" "mux2_0/inverter_0/Y" 3.79681
+cap "mux2_0/B" "mux2_0/A" 73.3359
 cap "mux2_0/VP" "mux2_0/muxout" 0.0510836
-cap "mux2_0/S" "mux2_0/B" 5.51757
-cap "mux2_0/S" "mux2_0/muxout" 7.05611
+cap "mux2_0/B" "mux2_0/S" 5.51757
+cap "mux2_0/B" "mux2_0/inverter_0/Y" -5.85
+cap "mux2_0/B" "mux2_0/VP" -104.062
+cap "mux2_0/muxout" "mux2_0/S" 7.05611
 subcap "m1_n30570_n10040#" -18776.9
 subcap "li_n30000_n9670#" -542.837
 subcap "B" -264493
-cap "mux2_0/VP" "mux2_0/B" -129.375
 cap "mux2_0/muxout" "mux2_0/inverter_0/Y" 4.47374
-cap "mux2_0/B" "mux2_0/inverter_0/Y" 1.95
 cap "mux2_0/muxout" "mux2_0/S" 27.7735
 cap "mux2_0/A" "mux2_0/B" -134.635
-cap "mux2_0/muxout" "mux2_0/B" -5.85
-cap "mux2_0/B" "mux2_0/S" 1.95
-cap "mux2_0/A" "A" 4.65385
-cap "mux2_0/B" "A" 17.9559
 cap "mux2_0/muxout" "mux2_0/VP" -35.7989
-cap "mux2_1/A" "mux2_1/VN" 5.25
-cap "mux2_1/inverter_0/Y" "mux2_1/S" 0.942857
-cap "mux2_1/VP" "mux2_1/S" 2.84217e-14
+cap "mux2_0/S" "mux2_0/B" 1.95
+cap "mux2_0/B" "mux2_0/inverter_0/Y" 1.95
+cap "A" "mux2_0/B" 17.9559
+cap "mux2_0/VP" "mux2_0/B" -129.375
+cap "mux2_0/A" "A" 4.65385
+cap "mux2_0/muxout" "mux2_0/B" -5.85
 cap "mux2_1/B" "mux2_1/A" 1.375
+cap "mux2_1/VN" "mux2_1/A" 5.25
+cap "mux2_1/S" "mux2_1/VP" 2.84217e-14
+cap "mux2_1/inverter_0/Y" "mux2_1/S" 0.942857
 subcap "li_n26800_n9670#" -831.197
+cap "mux2_2/S" "mux2_1/VP" 2.84217e-14
 cap "mux2_1/inverter_0/Y" "mux2_1/muxout" 7.72055
-cap "mux2_2/VN" "mux2_2/VP" -339.545
-cap "mux2_2/S" "mux2_1/muxout" 4.55172
+cap "mux2_1/muxout" "mux2_2/S" 4.55172
 cap "mux2_1/S" "mux2_1/muxout" 34.8297
-cap "mux2_2/VN" "mux2_2/A" 246.657
-cap "mux2_2/VN" "mux2_1/muxout" -5.85
-cap "mux2_2/VP" "mux2_1/muxout" -35.7478
-cap "mux2_2/VN" "mux2_1/inverter_0/Y" -3.9
-cap "mux2_2/VN" "mux2_2/S" 78.6491
-cap "mux2_2/VP" "mux2_2/S" 2.84217e-14
-cap "mux2_1/S" "mux2_2/VN" 3.9
+cap "mux2_1/inverter_0/Y" "mux2_1/B" -3.9
+cap "mux2_1/B" "mux2_2/S" 78.6491
+cap "mux2_1/B" "mux2_1/S" 3.9
+cap "mux2_1/muxout" "mux2_1/VP" -35.7478
+cap "mux2_1/B" "mux2_1/VP" -339.545
+cap "mux2_1/B" "mux2_1/A" 246.657
+cap "mux2_1/B" "mux2_1/muxout" -5.85
 subcap "li_n25200_n9670#" -831.567
-cap "mux2_2/S" "mux2_2/B" 3.9
-cap "mux2_2/B" "mux2_2/VP" -196.579
-cap "mux2_2/muxout" "mux2_2/inverter_0/Y" 7.72055
-cap "mux2_2/muxout" "mux2_2/S" 34.8297
-cap "mux2_2/inverter_0/Y" "mux2_2/B" -3.9
+cap "mux2_2/B" "mux2_2/S" 3.9
 cap "mux2_2/muxout" "mux2_2/VP" -35.7478
-cap "mux2_2/muxout" "mux2_2/B" -5.85
+cap "mux2_2/B" "mux2_2/VP" -196.579
+cap "mux2_2/inverter_0/Y" "mux2_2/muxout" 7.72055
+cap "mux2_2/inverter_0/Y" "mux2_2/B" -3.9
 cap "mux2_2/A" "mux2_2/B" 248.032
+cap "mux2_2/muxout" "mux2_2/B" -5.85
+cap "mux2_2/muxout" "mux2_2/S" 34.8297
 subcap "li_n22000_n9670#" -443.327
-cap "mux2_3/B" "mux2_3/S" 20.5316
-cap "mux2_3/muxout" "mux2_3/B" -5.85
 cap "mux2_3/VP" "mux2_3/S" 33
-cap "mux2_3/inverter_0/Y" "mux2_3/muxout" 7.72055
-cap "mux2_3/VP" "mux2_3/muxout" -35.7478
-cap "mux2_3/VP" "mux2_3/B" -266.538
-cap "mux2_3/inverter_0/Y" "mux2_3/B" -3.9
+cap "mux2_3/B" "mux2_3/muxout" -5.85
+cap "mux2_3/B" "mux2_3/inverter_0/Y" -3.9
 cap "mux2_3/muxout" "mux2_3/S" 34.8297
+cap "mux2_3/VP" "mux2_3/muxout" -35.7478
+cap "mux2_3/inverter_0/Y" "mux2_3/muxout" 7.72055
 cap "mux2_3/B" "mux2_3/A" 248.032
+cap "mux2_3/B" "mux2_3/S" 20.5316
+cap "mux2_3/B" "mux2_3/VP" -266.538
 subcap "li_n20400_n9670#" -484.127
 subcap "li_n22000_n9670#" -890.962
-cap "mux2_4/VP" "mux2_4/S" 43.2414
-cap "mux2_4/B" "mux2_4/muxout" -1.985
-cap "mux2_4/S" "mux2_4/A" 7.10543e-15
-cap "mux2_4/S" "mux2_4/muxout" 12.9535
-cap "mux2_4/S" "mux2_4/B" 27.5415
+cap "mux2_3/inverter_0/VP" "mux2_3/inverter_0/VN" -617.234
+cap "mux2_4/S" "mux2_3/inverter_0/VP" 43.2414
+cap "mux2_4/inverter_0/Y" "mux2_3/inverter_0/VN" -5.85
+cap "mux2_4/S" "mux2_3/inverter_0/VN" 27.5415
+cap "mux2_4/muxout" "mux2_3/inverter_0/VP" 0.0510836
 cap "mux2_4/inverter_0/Y" "mux2_4/muxout" 5.76412
-cap "mux2_4/inverter_0/Y" "mux2_4/B" -5.85
-cap "mux2_4/VP" "mux2_4/muxout" 0.0510836
-cap "mux2_4/VP" "mux2_4/B" -617.234
-cap "mux2_4/A" "mux2_4/B" 239.782
+cap "mux2_4/A" "mux2_3/inverter_0/VN" 239.782
+cap "mux2_4/A" "mux2_4/S" 7.10543e-15
+cap "mux2_4/muxout" "mux2_3/inverter_0/VN" -1.985
+cap "mux2_4/muxout" "mux2_4/S" 12.9535
 subcap "li_n20400_n9670#" -220.177
-cap "mux2_4/inverter_0/VN" "mux2_4/inverter_0/Y" 1.95
-cap "mux2_4/inverter_0/Y" "mux2_4/muxout" 1.95643
-cap "mux2_4/inverter_0/VP" "mux2_4/muxout" 1.85
-cap "mux2_4/inverter_0/VN" "mux2_4/muxout" -3.865
-cap "A" "mux2_4/inverter_0/VN" 8.25
-cap "mux2_4/inverter_0/A" "mux2_4/muxout" 21.8761
+cap "mux2_4/muxout" "mux2_4/inverter_0/A" 21.8761
+cap "mux2_4/muxout" "mux2_4/inverter_0/VP" -37.6489
+cap "mux2_4/inverter_0/Y" "mux2_4/inverter_0/VN" 1.95
+cap "mux2_4/muxout" "mux2_4/inverter_0/VP" 1.85
 cap "mux2_4/inverter_0/VP" "mux2_4/inverter_0/VN" -83.5714
-cap "mux2_4/inverter_0/VP" "mux2_4/muxout" -37.6489
+cap "A" "mux2_4/inverter_0/VN" 8.25
+cap "mux2_4/muxout" "mux2_4/inverter_0/VN" -3.865
+cap "mux2_4/inverter_0/Y" "mux2_4/muxout" 1.95643
 subcap "li_n17200_n9670#" -754.53
-cap "mux2_5/A" "mux2_5/VN" 17.63
+cap "mux2_5/VN" "mux2_5/VP" -58.8462
+cap "mux2_5/VN" "mux2_5/B" 64.345
+cap "mux2_5/S" "mux2_5/VP" 2.84217e-14
+cap "mux2_5/VN" "mux2_5/A" 17.63
 cap "mux2_5/A" "mux2_5/B" 11
-cap "mux2_5/VP" "mux2_5/VN" -58.8462
-cap "mux2_5/VP" "mux2_5/S" 2.84217e-14
-cap "mux2_5/B" "mux2_5/VN" 64.345
 subcap "li_n17200_n9670#" -787.887
-cap "mux2_6/VP" "mux2_6/S" 2.84217e-14
-cap "mux2_5/muxout" "mux2_6/VP" -35.7478
-cap "mux2_6/A" "mux2_6/VN" 61.3207
-cap "mux2_5/inverter_0/Y" "mux2_6/VN" -3.9
-cap "mux2_5/muxout" "mux2_5/inverter_0/Y" 7.72055
-cap "mux2_5/S" "mux2_6/VN" 3.9
-cap "mux2_6/B" "mux2_6/A" 1.375
-cap "mux2_6/inverter_0/Y" "mux2_6/S" 0.942857
+cap "mux2_5/B" "mux2_5/VP" -228.462
+cap "mux2_5/B" "mux2_5/inverter_0/Y" -3.9
 cap "mux2_5/muxout" "mux2_5/S" 34.8297
-cap "mux2_6/S" "mux2_6/VN" 107.191
-cap "mux2_5/muxout" "mux2_6/VN" -5.85
 cap "mux2_5/muxout" "mux2_6/S" 35.4879
-cap "mux2_6/VP" "mux2_6/VN" -228.462
+cap "mux2_5/B" "mux2_5/muxout" -5.85
+cap "mux2_5/muxout" "mux2_5/VP" -35.7478
+cap "mux2_6/inverter_0/Y" "mux2_6/S" 0.942857
+cap "mux2_5/muxout" "mux2_5/inverter_0/Y" 7.72055
+cap "mux2_5/B" "mux2_5/S" 3.9
+cap "mux2_5/A" "mux2_6/B" 1.375
+cap "mux2_5/B" "mux2_6/S" 107.191
+cap "mux2_5/B" "mux2_5/A" 61.3207
+cap "mux2_5/VP" "mux2_6/S" 2.84217e-14
 subcap "li_n15600_n9670#" -787.887
-cap "mux2_6/inverter_0/Y" "mux2_6/muxout" 7.72055
-cap "mux2_6/A" "mux2_6/B" 246.657
+cap "mux2_6/B" "mux2_6/A" 246.657
 cap "mux2_6/inverter_0/Y" "mux2_6/B" -3.9
+cap "mux2_6/muxout" "mux2_6/inverter_0/Y" 7.72055
 cap "mux2_6/muxout" "mux2_6/B" -5.85
-cap "mux2_6/muxout" "mux2_6/S" 34.8297
-cap "mux2_6/B" "mux2_6/S" 3.9
-cap "mux2_6/muxout" "mux2_6/VP" -35.7478
+cap "mux2_6/S" "mux2_6/B" 3.9
+cap "mux2_6/S" "mux2_6/muxout" 34.8297
 cap "mux2_6/B" "mux2_6/VP" -219.706
+cap "mux2_6/muxout" "mux2_6/VP" -35.7478
+cap "mux2_0/inverter_0/Y" "mux2_0/muxout" 2.11538
 cap "mux2_0/S" "dac_ladder_0/GND" 3.56757
-cap "mux2_0/muxout" "mux2_0/inverter_0/Y" 2.11538
 cap "mux2_0/S" "mux2_0/muxout" 6.53846
-cap "mux2_0/muxout" "mux2_0/inverter_0/Y" 1.69231
 cap "mux2_0/S" "mux2_0/muxout" 9.4359
+cap "mux2_0/muxout" "mux2_0/inverter_0/Y" 1.69231
 cap "dac_ladder_0/GND" "mux2_2/S" 3.56757
-cap "mux2_1/inverter_0/Y" "mux2_1/muxout" 3.80769
-cap "mux2_1/S" "mux2_1/muxout" 15.9744
-cap "mux2_2/muxout" "mux2_2/inverter_0/Y" 3.80769
+cap "mux2_1/muxout" "mux2_1/S" 15.9744
+cap "mux2_1/muxout" "mux2_1/inverter_0/Y" 3.80769
 cap "mux2_2/muxout" "mux2_2/S" 15.9744
-cap "dac_ladder_0/GND" "m1_n30570_n10040#" 4052.82
-cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" -20.5
+cap "mux2_2/inverter_0/Y" "mux2_2/muxout" 3.80769
+cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" -20.5
+cap "m1_n30570_n10040#" "dac_ladder_0/GND" 4052.82
 cap "m1_n30570_n10040#" "dac_ladder_0/a_n600_n4000#" 241.9
-cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 241.9
+cap "dac_ladder_0/GND" "m1_n30570_n10040#" -1319.75
 cap "mux2_3/muxout" "mux2_3/S" 15.9744
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" -1319.75
+cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 241.9
 cap "mux2_3/muxout" "mux2_3/inverter_0/Y" 3.80769
-cap "mux2_4/muxout" "mux2_4/inverter_0/Y" 3.80769
+cap "mux2_4/S" "mux2_4/muxout" 12.4359
+cap "mux2_4/inverter_0/Y" "mux2_4/muxout" 3.80769
 cap "mux2_4/S" "dac_ladder_0/GND" 1.78378
-cap "mux2_4/muxout" "mux2_4/S" 12.4359
 cap "mux2_4/inverter_0/A" "mux2_4/muxout" 3.53846
-cap "mux2_6/S" "dac_ladder_0/GND" 3.56757
+cap "dac_ladder_0/GND" "mux2_6/S" 3.56757
+cap "mux2_5/muxout" "mux2_5/S" 15.9744
 cap "mux2_5/muxout" "mux2_5/inverter_0/Y" 3.80769
-cap "mux2_5/S" "mux2_5/muxout" 15.9744
-cap "mux2_6/muxout" "mux2_6/inverter_0/Y" 3.80769
-cap "mux2_6/muxout" "mux2_6/S" 15.9744
+cap "mux2_6/S" "mux2_6/muxout" 15.9744
+cap "mux2_6/inverter_0/Y" "mux2_6/muxout" 3.80769
 cap "m1_n30570_n10040#" "dac_ladder_0/GND" 3969.75
 cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" -10.25
 cap "m1_n30570_n10040#" "dac_ladder_0/a_n600_n4000#" 287
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" -82.205
-cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 287
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" 472.925
-cap "ibias_vg_0/Vg" "ibias_vg_0/GND" 125.2
-cap "dac_ladder_0/GND" "m1_n30570_n10040#" 41.25
-cap "dac_ladder_0/Vg" "m1_n30570_n10040#" 41.25
-cap "dac_ladder_0/a_n600_n4000#" "m1_n30570_n10040#" 127.1
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" 3969.75
-cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" 151.4
-cap "m1_n30570_n10040#" "dac_ladder_0/Vg" -101.51
 cap "dac_ladder_0/GND" "m1_n30570_n10040#" 472.925
-cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 20.16
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" -183.715
-cap "ibias_vg_0/Vg" "ibias_vg_0/GND" 112.536
-cap "a_n33550_2290#" "dac_ladder_0/GND" 61.0946
+cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 287
+cap "m1_n30570_n10040#" "dac_ladder_0/GND" -82.205
+cap "ibias_vg_0/Vg" "ibias_vg_0/GND" 125.2
+cap "dac_ladder_0/a_n600_n4000#" "m1_n30570_n10040#" 127.1
+cap "dac_ladder_0/GND" "m1_n30570_n10040#" 41.25
 cap "dac_ladder_0/GND" "m1_n30570_n10040#" 3969.75
-cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" -20.5
 cap "dac_ladder_0/Vg" "m1_n30570_n10040#" 41.25
-cap "dac_ladder_0/a_n600_n4000#" "m1_n30570_n10040#" 282.9
-cap "m1_n30570_n10040#" "dac_ladder_0/Vg" -183.715
-cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" 282.9
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" 472.925
-cap "ibias_vg_0/GND" "a_n33550_2290#" 198.315
-cap "a_n33550_2290#" "dac_ladder_0/GND" 62.4324
+cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 151.4
+cap "dac_ladder_0/GND" "m1_n30570_n10040#" 472.925
+cap "m1_n30570_n10040#" "dac_ladder_0/GND" -183.715
+cap "m1_n30570_n10040#" "dac_ladder_0/Vg" -101.51
+cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" 20.16
+cap "ibias_vg_0/GND" "ibias_vg_0/Vg" 112.536
+cap "dac_ladder_0/GND" "a_n33550_2290#" 61.0946
+cap "dac_ladder_0/Vg" "m1_n30570_n10040#" 41.25
+cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" -20.5
+cap "m1_n30570_n10040#" "dac_ladder_0/a_n600_n4000#" 282.9
 cap "dac_ladder_0/GND" "m1_n30570_n10040#" 3969.75
-cap "m1_n30570_n10040#" "dac_ladder_0/a_n600_n4000#" 287
+cap "dac_ladder_0/GND" "m1_n30570_n10040#" 472.925
+cap "dac_ladder_0/Vg" "m1_n30570_n10040#" -183.715
+cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 282.9
+cap "a_n33550_2290#" "ibias_vg_0/GND" 198.315
+cap "dac_ladder_0/GND" "a_n33550_2290#" 62.4324
 cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" -10.25
-cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" 287
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" 472.925
+cap "dac_ladder_0/a_n600_n4000#" "m1_n30570_n10040#" 287
+cap "dac_ladder_0/GND" "m1_n30570_n10040#" 3969.75
 cap "m1_n30570_n10040#" "dac_ladder_0/Vg" -82.205
+cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 287
+cap "dac_ladder_0/GND" "m1_n30570_n10040#" 472.925
 cap "a_n33550_2290#" "ibias_vg_0/GND" 145.247
-cap "a_n33550_2290#" "dac_ladder_0/GND" 25.8649
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" 2114.91
+cap "dac_ladder_0/GND" "a_n33550_2290#" 25.8649
 cap "m1_n30570_n10040#" "dac_ladder_0/Vg" 123.78
-cap "m1_n30570_n10040#" "dac_ladder_0/a_n600_n4000#" 123
-cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" -41
+cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" -41
+cap "m1_n30570_n10040#" "dac_ladder_0/GND" 2114.91
+cap "dac_ladder_0/a_n600_n4000#" "m1_n30570_n10040#" 123
+cap "m1_n30570_n10040#" "dac_ladder_0/GND" -7.525
+cap "m1_n30570_n10040#" "dac_ladder_0/Vg" -265.875
+cap "m1_n30570_n10040#" "dac_ladder_0/GND" -177.415
 cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" 123
-cap "dac_ladder_0/GND" "m1_n30570_n10040#" -7.525
-cap "dac_ladder_0/GND" "m1_n30570_n10040#" -177.415
-cap "dac_ladder_0/Vg" "m1_n30570_n10040#" -265.875
 cap "a_660_n1740#" "m1_n5870_2600#" 335.72
 cap "a_660_n1740#" "m1_n5870_2600#" 620.73
 cap "a_660_n1740#" "m1_n5870_2600#" 620.73
 subcap "a_660_n1740#" -7543.79
-cap "dac_ladder_wilson_0/Vg" "dac_ladder_wilson_0/GND" -28.2
+cap "dac_ladder_wilson_0/GND" "dac_ladder_wilson_0/Vg" -28.2
 cap "m1_n5870_2600#" "a_660_n1740#" 620.73
 subcap "a_660_n1740#" -5686.36
 cap "dac_ladder_wilson_0/Vg" "dac_ladder_wilson_0/GND" 51.2
 cap "dac_ladder_wilson_0/Vg" "dac_ladder_wilson_0/VDD" 342.95
 cap "dac_ladder_wilson_0/a_13800_0#" "dac_ladder_wilson_0/Vg" 265.59
+cap "dac_ladder_wilson_0/a_13800_0#" "m1_n5870_2600#" 2328.89
 cap "m1_n5870_2600#" "dac_ladder_wilson_0/Vg" -26.325
-cap "m1_n5870_2600#" "dac_ladder_wilson_0/a_13800_0#" 2328.89
-cap "dac_ladder_wilson_0/a_17000_0#" "m1_n5870_2600#" 1514.79
-cap "m1_n5870_2600#" "dac_ladder_wilson_0/a_17000_0#" 10.43
+cap "m1_n5870_2600#" "dac_ladder_wilson_0/a_17000_0#" 1514.79
+cap "dac_ladder_wilson_0/a_17000_0#" "m1_n5870_2600#" 10.43
 cap "a_n33550_2290#" "ibias_vg_0/GND" 62.4324
-cap "a_n33550_2290#" "dac_ladder_0/GND" 62.4324
-cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" -10.25
-cap "dac_ladder_0/GND" "m1_n30570_n10040#" 630
-cap "dac_ladder_0/a_n600_n4000#" "m1_n30570_n10040#" 287
-cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 287
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" -40.205
-cap "li_12650_1440#" "dac_ladder_wilson_0/VDD" 413.15
-cap "li_19090_1920#" "dac_ladder_wilson_0/VDD" 348.525
-cap "dac_ladder_wilson_0/VDD" "li_19090_1920#" 64.625
-cap "ibias_vg_0/GND" "a_n33550_2290#" 191.521
 cap "dac_ladder_0/GND" "a_n33550_2290#" 62.4324
-subcap "a_n33550_2290#" -14744
 cap "m1_n30570_n10040#" "dac_ladder_0/GND" 630
 cap "m1_n30570_n10040#" "dac_ladder_0/a_n600_n4000#" 287
-cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" -10.25
+cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" -10.25
 cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 287
 cap "dac_ladder_0/GND" "m1_n30570_n10040#" -40.205
+cap "dac_ladder_wilson_0/VDD" "li_12650_1440#" 413.15
+cap "dac_ladder_wilson_0/VDD" "li_19090_1920#" 348.525
+cap "li_19090_1920#" "dac_ladder_wilson_0/VDD" 64.625
+cap "ibias_vg_0/GND" "a_n33550_2290#" 191.521
+cap "a_n33550_2290#" "dac_ladder_0/GND" 62.4324
+subcap "a_n33550_2290#" -14744
+cap "dac_ladder_0/GND" "m1_n30570_n10040#" 630
+cap "dac_ladder_0/a_n600_n4000#" "m1_n30570_n10040#" 287
+cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" -10.25
+cap "m1_n30570_n10040#" "dac_ladder_0/GND" -40.205
+cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" 287
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 262.36
-cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 262.36
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 262.36
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
 cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" 461.13
 cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
+cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
 cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
-cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" 461.13
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
+cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
+cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
 cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 272.26
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
 cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
-cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" 461.13
+cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" 461.13
+cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" 461.13
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
 subcap "li_12650_1440#" -11021.1
-cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/a_6810_n120#" 16.5
+cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/a_11610_n70#" 16.5
+cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
+cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/Iin" 2.35714
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" -30.44
-cap "low-voltage_super-wilson_0/Iin" "low-voltage_super-wilson_0/a_11610_n70#" 2.35714
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
 subcap "a_14250_1790#" -2473.72
 subcap "w_14250_2120#" -574.8
-cap "low-voltage_super-wilson_0/Iin" "low-voltage_super-wilson_0/a_7610_0#" 38.5
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_7610_0#" -15.75
+cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/a_11610_n70#" 365.25
+cap "low-voltage_super-wilson_0/Iin" "low-voltage_super-wilson_0/a_11610_n70#" 87.4353
+cap "low-voltage_super-wilson_0/a_7610_0#" "dac_ladder_wilson_0/VDD" -15.75
+cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
 cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/a_7610_0#" 466.487
-cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/Iin" 87.4353
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" -306.765
-cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/a_6810_n120#" 365.25
+cap "low-voltage_super-wilson_0/Iin" "low-voltage_super-wilson_0/a_7610_0#" 38.5
+cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" -306.765
 subcap "a_14250_1790#" -2146.24
 subcap "w_14250_2120#" -386.007
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
+cap "low-voltage_super-wilson_0/Iin" "li_12650_1440#" 72.1875
 cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/a_7610_0#" 423.96
-cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/Iin" 47.3
-cap "low-voltage_super-wilson_0/a_6810_n120#" "li_12650_1440#" 210
-cap "li_12650_1440#" "low-voltage_super-wilson_0/Iin" 72.1875
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_7610_0#" -19.35
-cap "li_12650_1440#" "low-voltage_super-wilson_0/Iin" 72.1875
-cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
-cap "low-voltage_super-wilson_0/a_6810_n120#" "li_12650_1440#" 210
-subcap "li_19090_1920#" -6578.08
 cap "li_12650_1440#" "low-voltage_super-wilson_0/a_6810_n120#" 210
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_7610_0#" -19.35
 cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
+cap "low-voltage_super-wilson_0/Iin" "low-voltage_super-wilson_0/a_7610_0#" 47.3
+cap "low-voltage_super-wilson_0/Iin" "li_12650_1440#" 72.1875
+cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 461.13
+cap "low-voltage_super-wilson_0/a_6810_n120#" "li_12650_1440#" 210
+subcap "li_19090_1920#" -6637.65
+cap "li_12650_1440#" "low-voltage_super-wilson_0/a_6810_n120#" 210
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 461.13
 cap "low-voltage_super-wilson_0/Iin" "li_12650_1440#" 42.7969
-subcap "li_19090_1920#" -9481.62
+subcap "li_19090_1920#" -9555.62
 cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" -132.66
 cap "low-voltage_super-wilson_0/a_6810_n120#" "li_12650_1440#" 43.5
-cap "dac_ladder_wilson_0/VDD" "li_19090_1920#" 8.25
+cap "li_19090_1920#" "dac_ladder_wilson_0/VDD" 8.25
 cap "a_n33550_2290#" "ibias_vg_0/GND" 95.7472
-cap "dac_ladder_0/VDD" "a_n33550_2290#" 1081.27
 cap "dac_ladder_0/GND" "a_n33550_2290#" 39.6892
-cap "dac_ladder_0/GND" "a_n33550_2290#" 51.7297
+cap "dac_ladder_0/VDD" "a_n33550_2290#" 1081.27
+cap "a_n33550_2290#" "dac_ladder_0/GND" 51.7297
+cap "dac_ladder_0/VDD" "a_n33550_2290#" 1059.63
 cap "dac_ladder_0/VDD" "a_n33550_2290#" 1059.63
 cap "a_n33550_2290#" "dac_ladder_0/GND" 57.0811
-cap "dac_ladder_0/VDD" "a_n33550_2290#" 1059.63
 subcap "a_n33550_2290#" -11121.9
-cap "dac_ladder_0/Vg" "dac_ladder_0/VDD" 1009.51
-cap "dac_ladder_0/Vg" "dac_ladder_0/GND" 60.6286
-cap "dac_ladder_0/Vg" "dac_ladder_0/VDD" 51.2
-cap "m1_n30570_n10040#" "dac_ladder_0/GND" 153.75
+cap "dac_ladder_0/GND" "dac_ladder_0/Vg" 60.6286
+cap "dac_ladder_0/VDD" "dac_ladder_0/Vg" 1009.51
+cap "dac_ladder_0/VDD" "dac_ladder_0/Vg" 51.2
 cap "m1_n30570_n10040#" "dac_ladder_0/a_n600_n4000#" 45.1
 cap "m1_n30570_n10040#" "dac_ladder_0/Vg" 91.9
 cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" -20.5
+cap "m1_n30570_n10040#" "dac_ladder_0/GND" 153.75
+cap "dac_ladder_0/a_2600_n4000#" "m1_n30570_n10040#" 45.1
 cap "dac_ladder_0/Vg" "m1_n30570_n10040#" -91.71
 cap "dac_ladder_0/GND" "m1_n30570_n10040#" -176.215
-cap "m1_n30570_n10040#" "dac_ladder_0/a_2600_n4000#" 45.1
-subcap "m1_n5870_2600#" -150656
+subcap "m1_n5870_2600#" -150614
 subcap "li_n5550_2460#" -331.526
+cap "low-voltage_super-wilson_0/Vout" "dac_ladder_wilson_0/VDD" 262.36
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 321.76
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Vout" 262.36
 cap "low-voltage_super-wilson_0/Vout" "low-voltage_super-wilson_0/Iin" 26.4
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
-cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -35.25
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Vout" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" 206.7
-cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -14.25
-cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -168.485
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Vout" 461.13
-cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -172.485
-cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" 205.92
 cap "low-voltage_super-wilson_0/Vout" "dac_ladder_wilson_0/VDD" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -35.25
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Vout" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -78.9
+cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -14.25
+cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" 206.7
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -168.485
+cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 461.13
+cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 461.13
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" 205.92
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Vout" 461.13
+cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -172.485
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" 202.8
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Vout" 244.25
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -89.3
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
-cap "low-voltage_super-wilson_0/Vout" "dac_ladder_wilson_0/VDD" -176.15
-cap "low-voltage_super-wilson_0/a_7610_0#" "dac_ladder_wilson_0/VDD" -44.71
-cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" -13.35
+cap "low-voltage_super-wilson_0/Vout" "dac_ladder_wilson_0/VDD" 461.13
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -78.9
 cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -80.65
+cap "low-voltage_super-wilson_0/Vout" "dac_ladder_wilson_0/VDD" 244.25
+cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -89.3
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
-cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" 212.68
+cap "low-voltage_super-wilson_0/a_7610_0#" "dac_ladder_wilson_0/VDD" -44.71
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Vout" -176.15
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" -13.35
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_7610_0#" -187.03
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -80.65
+cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 461.13
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" 212.68
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" 156.93
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" 143.585
+cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 461.13
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" -8.32501
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -129.97
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" 143.585
 cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" -15.65
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" -119.02
 cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" 80.145
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 514.09
-cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" -119.02
-cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" -118.57
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" -118.57
 cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 461.13
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_7610_0#" -222.61
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" -116.305
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
-cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/Iin" 2.35714
-cap "low-voltage_super-wilson_0/a_7610_0#" "dac_ladder_wilson_0/VDD" -9.13
+cap "low-voltage_super-wilson_0/a_7610_0#" "dac_ladder_wilson_0/VDD" -222.61
+cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 461.13
+cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" -116.305
 cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" 50.31
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
-subcap "a_14250_1790#" -2142.35
-cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/a_6810_n120#" 15.587
-cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" -35.615
-cap "low-voltage_super-wilson_0/a_7610_0#" "w_14250_2120#" 25.9
-cap "w_14250_2120#" "low-voltage_super-wilson_0/Iin" -9.7125
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_7610_0#" -253.985
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
-cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/a_7610_0#" 280.975
-cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/Iin" 87.4353
-cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/Iin" 346.906
-cap "dac_ladder_wilson_0/VDD" "w_14250_2120#" 143.195
-subcap "a_14250_1790#" -1975.69
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 449.197
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" -61.7825
-cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/a_7610_0#" 19.1498
-cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/a_7610_0#" 202.29
-cap "low-voltage_super-wilson_0/Iin" "low-voltage_super-wilson_0/a_7610_0#" 277.046
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_7610_0#" -100.22
-cap "li_12650_1440#" "low-voltage_super-wilson_0/Iin" 72.1875
-cap "li_12650_1440#" "low-voltage_super-wilson_0/Iin" 72.1875
-cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" -49.62
 cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 461.13
-subcap "li_19090_1920#" -7217.42
-cap "li_12650_1440#" "low-voltage_super-wilson_0/Iin" 42.7969
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" -124.77
-cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" -12.3
+cap "low-voltage_super-wilson_0/a_7610_0#" "dac_ladder_wilson_0/VDD" -9.13
+cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/Iin" 2.35714
+subcap "a_14250_1790#" -2142.35
+cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" -35.615
+cap "w_14250_2120#" "low-voltage_super-wilson_0/Iin" -9.7125
+cap "low-voltage_super-wilson_0/Iin" "low-voltage_super-wilson_0/a_7610_0#" 346.906
+cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/a_7610_0#" 15.587
+cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/Iin" 87.4353
+cap "w_14250_2120#" "low-voltage_super-wilson_0/a_7610_0#" 25.9
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
+cap "w_14250_2120#" "dac_ladder_wilson_0/VDD" 143.195
+cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/a_7610_0#" 280.975
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_7610_0#" -253.985
+subcap "a_14250_1790#" -1975.69
+cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/a_7610_0#" 19.1498
+cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" -61.7825
+cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 449.197
+cap "li_12650_1440#" "low-voltage_super-wilson_0/Iin" 72.1875
+cap "low-voltage_super-wilson_0/a_7610_0#" "dac_ladder_wilson_0/VDD" -100.22
+cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/a_11610_n70#" 202.29
+cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/Iin" 277.046
+cap "li_12650_1440#" "low-voltage_super-wilson_0/Iin" 72.1875
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 461.13
+cap "low-voltage_super-wilson_0/a_11610_n70#" "dac_ladder_wilson_0/VDD" -49.62
+subcap "li_19090_1920#" -7276.99
 cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" 82.485
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Iin" 445.08
-subcap "li_19090_1920#" -5925.84
-cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" 95.81
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" -807.215
+cap "low-voltage_super-wilson_0/Iin" "dac_ladder_wilson_0/VDD" 445.08
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" -12.3
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_11610_n70#" -124.77
+cap "low-voltage_super-wilson_0/Iin" "li_12650_1440#" 42.7969
+subcap "li_19090_1920#" -5984.07
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" 95.81
+cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" -807.215
+cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" 135.05
+cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -35.25
 cap "low-voltage_super-wilson_0/a_6810_n120#" "li_12650_1440#" -48.2308
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -35.25
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_6810_n120#" 135.05
-cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -168.485
-cap "low-voltage_super-wilson_0/a_7610_0#" "dac_ladder_wilson_0/VDD" -22.3
-cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/a_7610_0#" 71.5
+cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/a_7610_0#" 75.7059
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -168.485
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_7610_0#" -22.3
 cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" 131.38
-cap "li_19090_1920#" "dac_ladder_wilson_0/VDD" 22
-cap "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/VDD" -289.155
-cap "li_19090_1920#" "low-voltage_super-wilson_0/Vout" 68.75
+cap "low-voltage_super-wilson_0/Vout" "li_19090_1920#" 72.7941
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/a_6810_n120#" -289.155
+cap "dac_ladder_wilson_0/VDD" "li_19090_1920#" 26.4
 cap "low-voltage_super-wilson_0/Vout" "dac_ladder_wilson_0/VDD" -19.61
 cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" 275.6
-cap "li_19090_1920#" "low-voltage_super-wilson_0/Vout" 2.75
-cap "low-voltage_super-wilson_0/Vout" "dac_ladder_wilson_0/VDD" -2.69
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -78.9
-cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/VP" -78.9
+cap "li_19090_1920#" "low-voltage_super-wilson_0/Vout" 2.91176
+cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -78.9
+cap "dac_ladder_wilson_0/VDD" "low-voltage_super-wilson_0/Vout" -2.69
 cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" 275.6
+cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -78.9
 cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" 275.6
 cap "low-voltage_super-wilson_0/VP" "dac_ladder_wilson_0/VDD" -78.9
 subcap "m1_n39640_3880#" -3361.88
@@ -540,76 +540,76 @@ subcap "m1_n39640_3880#" -2570.83
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 143.39
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 109.785
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/Vout" 219.39
-cap "low-voltage_super-wilson_0/Vout" "low-voltage_super-wilson_0/VP" -99.1
-cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" -89.3
 cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/VP" 117.89
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_6810_n120#" -89.3
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/Vout" -99.1
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 86.97
 cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/VP" 72.4
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 188.5
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_6810_n120#" -22.3
 cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" -76.65
-cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" -22.3
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_6810_n120#" -150.97
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -35.25
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 188.5
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/Iin" -22.3
+cap "low-voltage_super-wilson_0/Iin" "low-voltage_super-wilson_0/VP" -22.3
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 188.5
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -35.25
+cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" -150.97
+cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/VP" -168.485
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -14.25
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -168.485
-cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/VP" 422.39
-cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/VP" -172.485
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 80.47
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -172.485
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_7610_0#" 422.39
+cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/VP" -319.95
+cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/VP" -78.9
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -17.13
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_7610_0#" -319.95
+cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/VP" -7.39
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -78.9
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_7610_0#" 219.39
+cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/VP" 219.39
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -78.9
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -7.39
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_7610_0#" 259.99
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -78.9
+cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/VP" 259.99
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -80.65
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_11610_n70#" -129.97
+cap "low-voltage_super-wilson_0/a_11610_n70#" "low-voltage_super-wilson_0/VP" -129.97
 cap "low-voltage_super-wilson_0/Iin" "low-voltage_super-wilson_0/VP" -22.3
 cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" -76.65
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 188.5
+cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" -150.97
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_6810_n120#" -22.3
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 188.5
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_6810_n120#" -150.97
-cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" -22.3
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_7610_0#" 479.38
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_6810_n120#" -14.25
+cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" -14.25
+cap "low-voltage_super-wilson_0/a_7610_0#" "low-voltage_super-wilson_0/VP" 479.38
 subcap "Vout" -2646.02
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/a_6810_n120#" -182.885
 cap "low-voltage_super-wilson_0/Vout" "low-voltage_super-wilson_0/VP" 411.89
-cap "low-voltage_super-wilson_0/a_6810_n120#" "low-voltage_super-wilson_0/VP" -182.885
 subcap "Vout" -2282.11
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 144.79
-cap "low-voltage_super-wilson_0/Vout" "low-voltage_super-wilson_0/VP" 113.709
-cap "low-voltage_super-wilson_0/Vout" "low-voltage_super-wilson_0/VP" 13.2
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/Vout" 13.2
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 151.19
-cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 150.475
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/Vout" 113.709
 cap "low-voltage_super-wilson_0/VP" "Vout" 64.9688
-cap "Vout" "low-voltage_super-wilson_0/VP" 72.1286
+cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 150.475
 cap "low-voltage_super-wilson_0/VP" "low-voltage_super-wilson_0/VP" 143.39
+cap "Vout" "low-voltage_super-wilson_0/VP" 72.1286
 cap "low-voltage_super-wilson_0/VP" "Vout" 157.428
 cap "Vout" "low-voltage_super-wilson_0/VP" 3.09375
 merge "low-voltage_super-wilson_0/VSUBS" "dac_ladder_0/GND" -60999.3 0 0 0 0 0 0 0 0 -2300 -2520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4221000 -11280 0 0 2852500 -13080 -79260812 -113774 0 0 0 0 0 0 0 0 0 0
 merge "dac_ladder_0/GND" "mux2_6/B"
-merge "mux2_6/B" "mux2_5/B"
-merge "mux2_5/B" "mux2_6/VSUBS"
+merge "mux2_6/B" "mux2_6/VSUBS"
 merge "mux2_6/VSUBS" "mux2_6/VN"
-merge "mux2_6/VN" "mux2_5/VSUBS"
+merge "mux2_6/VN" "mux2_5/B"
+merge "mux2_5/B" "mux2_5/VSUBS"
 merge "mux2_5/VSUBS" "mux2_5/VN"
 merge "mux2_5/VN" "mux2_4/inverter_0/VN"
-merge "mux2_4/inverter_0/VN" "mux2_3/inverter_0/VN"
-merge "mux2_3/inverter_0/VN" "mux2_4/VSUBS"
+merge "mux2_4/inverter_0/VN" "mux2_4/VSUBS"
 merge "mux2_4/VSUBS" "mux2_4/VN"
 merge "mux2_4/VN" "mux2_4/B"
-merge "mux2_4/B" "mux2_3/VSUBS"
+merge "mux2_4/B" "mux2_3/inverter_0/VN"
+merge "mux2_3/inverter_0/VN" "mux2_3/VSUBS"
 merge "mux2_3/VSUBS" "mux2_3/VN"
 merge "mux2_3/VN" "mux2_3/B"
 merge "mux2_3/B" "mux2_2/m1_410_40#"
 merge "mux2_2/m1_410_40#" "mux2_2/B"
-merge "mux2_2/B" "mux2_1/B"
-merge "mux2_1/B" "mux2_2/VSUBS"
+merge "mux2_2/B" "mux2_2/VSUBS"
 merge "mux2_2/VSUBS" "mux2_2/VN"
-merge "mux2_2/VN" "mux2_1/VSUBS"
+merge "mux2_2/VN" "mux2_1/B"
+merge "mux2_1/B" "mux2_1/VSUBS"
 merge "mux2_1/VSUBS" "mux2_1/VN"
 merge "mux2_1/VN" "mux2_0/VSUBS"
 merge "mux2_0/VSUBS" "mux2_0/VN"
@@ -637,9 +637,9 @@ merge "ibias_vg_0/Vbn" "A"
 merge "dac_ladder_0/VDD" "mux2_6/VP" -53366.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72896500 -55680 0 0 0 0 0 0 0 0 0 0
 merge "mux2_6/VP" "mux2_5/VP"
 merge "mux2_5/VP" "mux2_4/inverter_0/VP"
-merge "mux2_4/inverter_0/VP" "mux2_3/inverter_0/VP"
-merge "mux2_3/inverter_0/VP" "mux2_4/VP"
-merge "mux2_4/VP" "mux2_3/VP"
+merge "mux2_4/inverter_0/VP" "mux2_4/VP"
+merge "mux2_4/VP" "mux2_3/inverter_0/VP"
+merge "mux2_3/inverter_0/VP" "mux2_3/VP"
 merge "mux2_3/VP" "mux2_2/m1_410_510#"
 merge "mux2_2/m1_410_510#" "mux2_2/VP"
 merge "mux2_2/VP" "mux2_1/VP"
@@ -675,7 +675,7 @@ merge "mux2_6/muxout" "li_n15600_n9670#"
 merge "mux2_4/inverter_0/A" "mux2_4/S" -134.832 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20900 -420 0 0 0 0 0 0 0 0 0 0 0 0
 merge "mux2_4/S" "s4"
 merge "mux2_5/S" "s5" -208.415 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -171800 -180 0 0 0 0 0 0 0 0 0 0 0 0
-merge "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/a_17000_0#" -6469.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2569500 -15020 0 0 0 0 0 0 0 0 0 0 0 0
+merge "low-voltage_super-wilson_0/a_6810_n120#" "dac_ladder_wilson_0/a_17000_0#" -6541.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2642100 -15040 0 0 0 0 0 0 0 0 0 0 0 0
 merge "dac_ladder_wilson_0/a_17000_0#" "li_19090_1920#"
 merge "mux2_6/S" "s6" -148.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -184800 -220 0 0 0 0 0 0 0 0 0 0 0 0
 merge "dac_ladder_0/b1" "mux2_1/muxout" -223.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30400 -740 0 0 0 0 0 0 0 0 0 0 0 0
