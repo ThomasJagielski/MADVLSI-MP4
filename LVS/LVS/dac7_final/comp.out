@@ -58,7 +58,7 @@ VN                                         |GND **Mismatch**
 Cell pin lists are equivalent.
 Device classes mux2 and mux2 are equivalent.
 Class dac7.spice:  Merged 125 devices.
-Class dac_7_final_xschem.spice:  Merged 122 devices.
+Class dac_7_final_xschem.spice:  Merged 125 devices.
 
 Subcircuit summary:
 Circuit 1: dac7.spice                      |Circuit 2: dac_7_final_xschem.spice        
@@ -73,13 +73,6 @@ Resolving automorphisms by property value.
 Resolving automorphisms by pin name.
 Netlists match uniquely.
 Circuits match correctly.
-There were property errors.
-ibias_vg_0/sky130_fd_pr__nfet_01v832 vs. sky130_fd_pr__nfet_01v8Mdumb1:
- w circuit1: 32   circuit2: 16   (delta=66.7%, cutoff=1%)
-low-voltage_super-wilson_0/sky130_fd_pr__pfet_01v80 vs. sky130_fd_pr__pfet_01v8M146:
- w circuit1: 208   circuit2: 176   (delta=16.7%, cutoff=1%)
 Cells have no pins;  pin matching not needed.
 Device classes dac7.spice and dac_7_final_xschem.spice are equivalent.
 Circuits match uniquely.
-Property errors were found.
-The following cells had property errors: dac7.spice
